@@ -21,10 +21,15 @@
       border-style: solid;
       border-color: rgb(80, 80, 80);
     }
-    thead {
-      background-color: darkcyan;
-    }
-  </style>
+    thead { color: white; background-color: darkslategrey; }
+    tbody { background-color: darkkhaki; }
+
+    .line_impact { background-color: darkolivegreen; }  /* . = class 선택자 */
+    .cell_01 { width: 80px;} /* 전체 px이 지정되어있어도 colgroup의 각 cell이 전체 px에 못미쳐도 자동으로 비율이 조정됨 */ 
+    .cell_02 { width: 170px;}
+    .cell_03 { width: 170px;}
+    .cell_04 { width: 400px;}
+    </style>
 </head>
 <body>
   <h1><a href="../index.html">웹기초</a></h1>
@@ -32,32 +37,67 @@
 
     <table> <!-- table 내 cell의 개수는 늘 일치해야함 -->
       <caption>테이블 구조 기본 형태 이해하기</caption>
-        <thead>   <!-- table head-->
+
+      <colgroup> <!-- 가시적으로 보여지는 그룹은 아님 -->
+        <col class="cell_01">
+        <col class="cell_02" span="2">  <!-- span은 rowspan, colspan과 같은 의미-->
+        <!-- <col class="cell_03"> -->
+        <col class="cell_04">
+        <col class="cell_05">
+      </colgroup>
+      
+      <thead>   <!-- table head-->
         <tr>
           <th>ID no</th>  <!-- th: 제목(기본 가운데 정렬) / td: 내용(기본 왼 정렬) -->
           <th>성</th>
           <th>이름</th>
           <th>이메일</th>
-          <th></th>
+          <th>작성일</th>
         </tr>
       </thead>
 
       <tbody>   <!-- table body-->
-        <tr>
-          <th>001</th><td>Mark</td><td>Octo</td><td><a href="#">mark@email.com</a></td><td>02.14</td>
-        </tr>
-          <th>002</th><td>Json</td><td>Airdays</td><td><a href="#">json001@email.com</a></td><td>02.14</td>
-        </tr>
-        <tr>
-          <th>003</th><td>Larry</td><td>Visualy</td><td><a href="#">larry@email.com</a></td><td>03.02</td>
+        <tr class="line_impact"> 
+          <th>001</th>
+          <td colspan="2">Mark Octo</td>
+          <td><a href="#">mark@email.com</a></td>
+          <td>02.14</td>
         </tr>
         <tr>
-          <th>004</th><td>Gray</td><td>BootLamp</td><td><a href="#">gray_color@email.com</a></td><td>04.01</td>
+          <th>002</th>
+          <td>Json</td><td>Airdays</td>
+          <td><a href="#">json001@email.com</a></td>
+          <td>02.14</td>
         </tr>
-        <tr>
-          <th>005</th><td>Park</td><td>-</td><td><a href="#">green@email.com</a></td><td>05.01</td>
+        <tr class="line_impact">
+          <th>003</th>
+          <td>Larry</td>
+          <td>Visualy</td>
+          <td><a href="#">larry@email.com</a></td>
+          <td>03.02</td>
+        </tr>
+        <tr >
+          <th>004</th>
+          <td>Gray</td>
+          <td>BootLamp</td>
+          <td><a href="#">gray_color@email.com</a></td>
+          <td>04.01</td>
+        </tr>
+        <tr class="line_impact">
+          <th rowspan="2">005</th>
+          <td rowspan="2">Park</td>
+          <td rowspan="2">-</td>
+          <td><a href="#">green@email.com</a></td>
+          <td rowspan="2">05.01</td>
+        </tr>
+        <tr >
+          <td><a href="#">green2@email.com</a></td>
         </tr>
       </tbody>
+
+      <!-- 위,아래 중복된 내용으로 cell을 합칠경우 중복된 내용중 위에있는 td 태그안에 rowspan 추가, 속성값은 합칠 선이 몇개인지에 따라 입력, 두칸이면 2-->
+      <!-- 좌,우 중복된 내용으로 cell을 합칠경우 중복된 내용중 위에있는 td 태그안에 colspan 추가, 속성값은 합칠 선이 몇개인지에 따라 입력, 두칸이면 2-->
+      <!-- 상하좌우 cell 합치고 싶으면 rowspan, colspan 둘 다 사용-->
 
      <!-- table footer : 생략하는 경우도 많음 / thead 다음에 작성해도 보여지는 결과물은 맨 마지막-->
 
