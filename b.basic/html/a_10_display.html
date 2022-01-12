@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <title>웹기초</title>
+  <style>
+    .box_01 {
+      width: 200px;
+      height: 50px;
+      background-color: thistle;
+    }
+    .box_02 {
+      width: 300px;
+      height: 30px;
+      background-color: tomato;
+    }
+    ul {
+      width: 200px; height: auto;
+      background-color: violet;
+    }
+    li { list-style: none; width: 200px; height: 30px;}
+    .list_01 { background-color: wheat;}
+    .list_02 { background-color: whitesmoke;}
+    hr { width: 200px; height: 20px; background-color: black;}
+
+    .mini_group_01 {width: 300px; height: 50px; background-color: yellowgreen;}
+    a { width: 200px; height: 505px; background-color: yellow;}
+
+    button {
+      width:  300px; height: 30px;
+      background-color: cadetblue;
+      border: 0;
+    }
+
+    .convert_box {
+      width:  300px; height: 50px;
+      background-color: cornflowerblue;
+    }
+    .convert_box>a {
+     display: inline-block;  /* inline-block: 사이 간격 조절이 안되는 단점이 있음 */
+      width: 30%; height: 30px;
+      font-size: 0.7rem;
+    }
+
+    .convert_box_02 {
+      display: none; /* display:none; = 화면상에서는 안보이나 내용은 존재, 음악플레이어는 안보여도 재생등 */
+      width: 500px; height: 100px;
+      background-color: darkgoldenrod;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <h1><a href="../index.html"> 웹기초 </a></h1>
+      <h2>inline과 block의 개념</h2>
+        <div class="box_01">div는 크기를 가질 수 있는?</div>
+        <p class="box_02">p요소는 크기를?</p>
+        <ul>
+          <li class="list_01">list_01</li>
+          <li class="list_02">list_02</li>
+        </ul>
+
+    <hr />
+        <span class="mini_group_01">의미없는 작은 단위의 그룹요소</span>
+        <a href="#"> link 기능을 가진 요소</a>
+
+    <hr />
+
+        <button type="button">버튼은 어떠한 형태?</button>
+        <button type="button">버튼은 어떠한 형태?</button>
+    <hr />
+        <div>
+          결과? : (div안에span)
+          <span>
+            인라인 형식의 요소
+          </span>
+        </div>
+
+        <!-- 기본적으로 inlin안에는 block을 담을 수 없지만 a태그는 예외 -->
+        <div>
+          <a href="#">
+            <div>a 내부에
+              <p>설명</p>
+              <dl>
+                <dt>제목</dt>
+                <dd>내용</dd>
+              </dl>
+            </div>
+          </a>
+        </div>
+
+        <p>
+          <div>div가 p보다 상위 개념이라 적용 안됨</div>
+        </p>
+
+        <div class="convert_box">
+          <a href="#">block으로 변환</a>
+          <a href="#">block으로 변환</a>
+          <a href="#">block으로 변환</a>
+        </div>
+
+        <div class="convert_box_02">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quod aspernatur nisi. Debitis incidunt repellendus maiores suscipit tempore, saepe doloribus aperiam laudantium assumenda laborum quisquam. Reprehenderit iste sapiente eum minus!
+        </div>
+
+  </div>
+  
+</body>
+</html>
