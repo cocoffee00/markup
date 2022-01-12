@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- a_07_selector_01.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <title>웹기초 - 선택자</title>
+  <style>
+    body { background-color: beige; }
+    h1 { background-color: bisque; color: burlywood; }
+    #baseSelector { 
+      border-width: 2px; 
+      border-style: solid; 
+      border-color: darkred; 
+    }
+    h2.select_title { color: rgb(21, 53, 114); background-color: coral; }
+    p.select_title { color: crimson; }
+    #makeBox { width: 400px; height: 100px;}
+    .one_box { background-color: gainsboro; }
+    #moreSelector { 
+      /* border-width: 3px;
+      border-style: dotted;
+      border-color: firebrick; */
+      border: 3px dotted #b22222;
+    }
+    /*
+    id의 이름을 작성할 경우: camel_case형식(뒤에오는 단어 첫글자 대문자) -> view box -> viewBox
+    class의 이름을 작성할 경우: 언더바형식(뒤에오는 단어를 구분하기 위해 _를 사용) ->view_box
+    ctrl + h :현재 페이지에서 찾아서 단어 변경할때 사용
+    shift + ctrl + h :폴더내 전체 페이지에서 찾기
+    */
+
+
+  </style>
+</head>
+<body>
+  <h1>웹문서</h1>
+    <div id="baseSelector">
+      <h2 class="select_title">css 선택자</h2>
+        <p class="select_title">내용을 작성</p>
+        <div id="makeBox" class="one_box">하나의 박스를 생성</div>
+    </div>
+
+    <div id="moreSelector">
+      <h2 class="select_title">선택자 추가</h2>
+        <p>다양한 선택자를 추가</p>
+    </div>
+
+</body>
+</html>

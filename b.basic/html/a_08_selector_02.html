@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- a_08_selector_02.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <title>웹기초 -선택자2</title>
+  <style>
+    #wrap { 
+      width: 800px; 
+      height: auto; 
+      margin: auto;
+      background-color: honeydew;
+    }
+    /* ul>li { 
+      margin: 5px;
+      border: 1px solid #555; 
+      color: lightcoral;
+    }
+    ul li>a { color: lightslategrey; }
+
+    ol>li {  
+      background-color: indianred;
+      margin-bottom: 10px;
+    } */
+    .list { background-color: blueviolet; }
+    ol li { background-color: aliceblue; margin-bottom: 10px;}  
+    li { background-color: blanchedalmond; }
+
+    
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <h1><a href="../index.html">웹표준</a></h1>
+    <h2>자손, 자식 선택자</h2>
+
+      <ul>
+        <li class="list">list 01</li>
+        <li>
+          <div>
+            <a href="#">list 02</a>
+          </div>
+          <ol>
+            <li><a href="#">sub list 01</a></li>
+            <li><a href="#">sub list 02</a></li>
+            <li><a href="#">sub list 03</a></li>
+            <li><a href="#">sub list 04</a></li>
+          </ol>
+        </li>
+        <li>list 03</li>
+        <li>list 04</li>
+      </ul>
+  </div>
+  
+</body>
+</html>
