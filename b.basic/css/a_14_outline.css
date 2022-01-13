@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/* a_14_outline.css */
+
+#wrap {
+  width: 900px; height: 2000px;
+  margin: auto;
+  background-color: gray;
+}
+.part {
+  width: 90%; height: 500px;
+  margin: auto; padding: 30px; 
+  background-color: white;
+}
+.part>div {
+  float: left;
+  width: 100px; height: 100px;
+  background-color: yellow;
+  background-image: linear-gradient(-60deg, #aca, #cac);
+}
+
+.outline_01 { 
+  outline-width:  20;
+  outline-style: dashed;
+  outline-color: yellowgreen;
+}
+.outline_02 { 
+  outline: 10px solid darkgreen;
+}
+.outline_03>a:focus {
+  border: 5px dotted black;
+}
+.outline_04>button:hover {
+  outline: 10px solid brown;
+}
+.outline_05:focus {
+  outline: 30px solid blue;
+}
