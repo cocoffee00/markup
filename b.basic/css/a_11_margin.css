@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/* a_11_margin.css */
+/* ctrl + alt + >  =자동으로 화면 나눔*/
+
+#wrap {
+  width: 900px; height:  3000px;
+  margin: auto;
+  background-color: gray;
+}
+.part {
+  width: 95%; height: auto;
+  margin: auto;
+  border: 1px solid;
+  background-color: white;
+}
+
+.part>div {
+  width: 200px; height: 200px;
+}
+/* margin은 연달아 있는 상태에서 겹치면 큰 쪽의 값을 적용(margin 50과 20이 있으면 겹치는 부분의 여백은 50으로 적용) */
+
+/* 부모요소의 첫번째 자식은 margin 적용시 부모요소를 함께 가지고 적용됨(margin을 10px주면 좌,우,하단에 10씩 여백이 생기지만 상단은 여백이 생기는것이 아니라 부모요소를 10px만큼 가지고 내려옴) /마지막 요소도 같음  -  무시하고 싶으면 부모 요소에 border를 적용하면 됨*/
+
+.margin_01 { 
+  margin: 30px;
+  background-color: thistle;
+}
+.margin_02 { 
+  margin: 30px;
+  background-color: tomato;
+}
+.margin_03 { 
+  background-color: brown;
+  margin: 30px;
+}
+/* ======================================================= */
+.part_02 { border:none; height: 2000px;}
+.part_02>div {
+  float: left; /* 왼쪽을 기준으로 나란해 정렬/margin인 요소마다 적용 */
+  background-image: linear-gradient(30deg, #afc, #fca);
+}
+
+.more_margin_01 { margin: 10px;} 
+.more_margin_02 { margin: 30px;}
+.more_margin_03 { margin: 40px 20px;}
+.more_margin_04 { margin: 10px 20px 30px;}
+.more_margin_05 { margin: 5px 20px 10px 40px;}
+.more_margin_06 { margin: 10px; margin-left: 40px;}
+.more_margin_07 { margin-top: 40px; margin-left: 20px;}
+.more_margin_08 { margin-top : 10px; margin-top: 1px;}
+/* 같은 속성을 주면 뒤에있는 속성값이 우선순위가 됨 */
