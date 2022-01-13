@@ -14,10 +14,51 @@
   }
 
   .part>div {
-    width: 100px; height: 100px;
+    float: left;
+    width: 120px; height: 120px;
     background-color: #acf;
     background-image: linear-gradient(45deg, #acf, #afc);
   }
 
   .part .padding_01 { width: 200px; height: 200px;}
   .padding_02 { padding: 50px;}
+  .part .padding_03 { width: 200px; height: 200px;}
+  .padding_inner { 
+    width: 100px; height: 100px;
+    margin: auto; margin-top: 50px;
+    /* background-color: blueviolet; */
+  }
+  .part .padding_04 { 
+    width: 60px; height: 60px;
+    padding: 20px;
+  }
+  .padding_05 {
+    padding: 20px;
+    box-sizing: border-box;
+    /* border-box = 기본적으로 주어진 박스 사이즈값에 padding 값 만큼 안쪽으로 적용하게해줌 (보여지는 사이즈는 기본 사이즈(120)인데 내용물은 상하좌우 -20씩 적용되어 80  
+    content-box는 기본으로 적용되어있음  */
+    /* box-sizing: border-box || content-box 두가지 */ 
+  }
+ .padding_06 {
+    padding: 20px;
+    box-sizing: content-box;
+
+  /* =============================== */
+
+  .more_p_01 { padding: 20px;}
+  .more_p_02 { padding: 20px 40px;}
+  .more_p_03 { padding: 10px 20px 40px;}
+  .more_p_04 { padding: 20px 30px 40px 10px;}
+  .more_p_05 { padding: 30px; padding-left: 50px;}
+  .more_p_06 {
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+  }
+  .more_p_07 { padding-right: 50; padding-right: 80px;}
+  .more_p_08 {margin: auto; padding: auto;}
+  .more_p_09 { margin-top: -50px; margin-left: -10px;}
+  .more_p_10 { padding-top: -100px;}
+
+  /* padding은 auto가 없음/그리고 마이너스값 적용 안됨 */
