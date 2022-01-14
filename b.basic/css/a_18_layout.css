@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/* a_18_layout.css */
+
+body, h1, h2, h3, h4, h5, h6, hr { margin: 0; border:0;}
+
+hr { border-top: 1px solid #333 }
+/* -------------------------------------------------------- */
+
+#wrap {
+  width: 100%; height: auto;
+  margin: auto; padding-bottom: 50px;
+  background-color: #bbb;
+}
+.part { 
+  width: 800px; height: 800px;
+  margin: auto; margin-top:50px;
+  background-color: #eee;
+}
+h3 { 
+  width: 100%; height: 25px;
+  font-size:  1.1rem; text-align: center; 
+  background-color: #aff;
+}
+
+.exam {
+  width: 600px; height: auto;
+  margin: auto;
+  border: 1px solid #333;
+  background-color: white;
+}
+.none { display: none;}
+
+.box_01 {
+  width: 600px; height: auto;
+  margin: auto; margin-top: 10px;
+}
+.box_01>div { width: 100%; height: 200px; }
+.inner_01 { color: white; background-color: #456ea2;}
+.inner_02 { background-color: #fff9eb;}
+.inner_03 { background-color: #ffcf5d;}
+
+.box_02 { width: 800px; height: auto; margin: auto; margin-top: 10px;}
+.box_02::after { content:""; width:100%; height: 0; display: block; clear: both;}
+.box_02>div { float:left; width:33.333333%; height: 600px; }
+
+
+.box_03 { width: 600px; height: auto; margin: auto; background-color: #95d6a4; }
+.box_03>div { margin: auto; width: 200px; height: 300px; }
+
+.box_04 { width: 600px; height: auto; }
+.box_04>div { width: 100%; height: auto; }
+
+.box_04>.insert { 
+  width:60%; height: 200px; 
+  margin: auto; padding: 10px; box-sizing: border-box;
+  color: white;
+}
+.box_04>.inner_01> .insert { color:#777;}
+.box_04>.inner_02> .insert { width: 45%; }
+.box_04>.inner_03> .insert { margin:0;}
+
+.inner_01> .insert { background-color: #ffcf5d;}
+.inner_02> .insert { background-color: #db5446;}
+.inner_03> .insert { background-color: #7e94ef;}
+
+.box_05 { width:600px; height: auto;}
+.box_05::after { content:""; display: block; clear: both;}
+.box_05>div { float: left; width: 200px; height: 600px;}
+.box_05 .insert { width: 100%; height: 200px; padding: 10px; box-sizing: border-box;}
+.box_05 .inner_02 .insert { margin-top: 200px;}
+.box_05 .inner_03 .insert { margin-top: 400px;}
