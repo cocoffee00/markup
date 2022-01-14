@@ -27,19 +27,28 @@ caption {
 
 }
 
+
+
+
+
 table .th_border { 
   height: 30px;
   box-sizing:border-box;
   border-top: 3px solid #333;
   border-bottom: 3px solid #333;
 }
-tr { width:100%; height: 25px; }
+tr { width:100%; height: 25px; 
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;}
 
 td { 
   padding: 0;
   border: 1px solid #555; 
 }
 
-.thead { color:white; background-color: rgb(44, 76, 170);}
+.thead { background-color: rgb(44, 76, 170)}
+.thead>th {  color:white; font-weight: 300;}
 .bold_line { border-bottom: 3px solid #333;}
 .color_cell { background-color: skyblue;}
+
+.text_center { text-align: center;}
