@@ -1,2 +1,27 @@
 @charset "utf-8";
 /* a_17_overflow.css */
+body,h1,h2,hr { margin: 0;}
+
+#wrap {
+  width: 900px; height: auto;
+  margin: auto;
+  background-color: #ddd;
+}
+
+.part {
+  width: 90%; height: auto;
+  margin: 10px auto; padding-bottom: 10px;
+  background-color: #ffd;
+}
+
+.ex {
+  width: 70%; height: 200px;
+  margin: auto; margin-bottom: 100px;
+  border: 1px solid #777;
+  font-size: 20px;
+  background-color: #fff;
+}
+
+.hidden { overflow: hidden;} /* 넘치는 역역 강제로 숨김*/
+.scroll { overflow: hidden; overflow-y: scroll;} /* 내용이 넘치든 아니든 스크롤바 생성*/
+.auto { overflow: auto;} /* 상황에 따라 스크롤바 생성*/
