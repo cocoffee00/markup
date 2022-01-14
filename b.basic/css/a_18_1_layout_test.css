@@ -8,7 +8,7 @@ body,h1, hr { margin:0;}
 
 #wrap { 
   width: 100%; height: auto; 
-  margin: auto; padding-bottom: 50px;
+  margin: auto; 
 }
 
 .part { margin: auto; margin-top: 50px;}
