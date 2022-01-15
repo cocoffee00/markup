@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* main_01.css */
+
+body { margin:0;}
+
+#wrap { 
+  width: 1440px; height: auto; min-height: 500px;
+  margin: auto;
+  background-color: antiquewhite;
+}
+
+/* ______________________________________헤드박스______________ */
+#headBox { 
+  width: 1440px; height: 100px;
+  padding-top: 20px; box-sizing: border-box;
+  background-color: #555;
+}
+#logo {
+  float: left;
+  width: 120px; height: 70px;
+  background-color: #bbb;
+}
+#navBox {
+  float: right;
+  width: 510px; height: 70px;
+  background-color: #bbb;
+}
+
+
+/* ________________________________________슬라이드박스____________ */
+#slideBox {
+  width: 1440px; height: 600px;
+  padding-top: 100px; box-sizing: border-box;
+  background-color: #777;
+}
+#adCon {
+  width: 780px; height: 400px;
+  margin: auto;
+  background-color: #eee;
+}
+/* ________________________________________뉴박스_____________ */
+#newBox {
+  width: 1440px; height: 700px;
+  padding-top: 62px; box-sizing: border-box;
+  background-color: #eee;
+}
+.area_title {
+  width:  940px; height: 70px;
+  margin: auto;
+  background-color: #ccc;
+}
+.area_content {
+  width:  940px; height: 370px;
+  margin: auto; margin-top: 48px;
+  background-color: #ccc;
+}
+.area_indicator{
+  width: 140px; height: 30px;
+  margin: auto; margin-top: 50px; 
+  background-color: #ccc;
+}
+/* ______________________________________________________ */
+#subBox {
+  width: 1440px; height: 350px;
+  background-color: #ccc;
+}
+/* _____________________________________________________ */
+#bestBox {
+  width: 1440px; height: 700px;
+  background-color: #eee;
+}
+/* ________________________________________________________ */
+#galleryBox {
+  width: 1440px; height: 750px;
+  background-color: #666;
+}
+/* _______________________________________________________ */
+#sponsorBox {
+  width: 1440px; height: 100px;
+  background-color: #bbb;
+}
+/* __________________________________________________________ */
+#footerBox {
+  width: 1440px; height: 450px;
+  background-color: #333;
+}
