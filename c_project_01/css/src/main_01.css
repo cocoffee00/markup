@@ -3,6 +3,10 @@
 
 /* reset.css================================================ */
 body { margin:0;}
+h1,h2,h3,h4,h5,h6 { margin: 0;}
+ul { margin: 0; padding: 0;}
+li { list-style: none;}
+
 
 /* common ================================================== */
 .max_width {
@@ -29,18 +33,68 @@ body { margin:0;}
   height: auto;
 }
 .area_head::after {
-  content: ""; display: block; width:100%; height: 0;; clear: both;
+  content: ""; display: block; width:100%; height: 0; clear: both;
 }
+/* __________________________헤드박스 로고 */
 #logo {
   float: left;
   width: 120px; height: 70px;
   background-color: #bbb;
 }
+/* __________________________헤드박스 네비바 */
 #navBox {
   float: right;
-  width: 510px; height: 70px;
+  width: auto; height: 70px;
   background-color: #bbb;
 }
+#navBox::after {
+  content: ""; display: block; clear: both;
+}
+/* ____________________________unb 코드 정리하기 */
+.unb {
+  float: left;
+  width: auto;
+  height: 26px;
+  margin-left:  240px;
+  background-color: #ddd;
+}
+.unb::after{
+  content: ""; display: block; width: 100%; height: 0; clear: both;
+}
+.unb ul { 
+  width: 100%;
+  padding: 3px 0; box-sizing: border-box; 
+}
+.unb ul::after {
+  content: ""; display: block; width: 100%; height: 0; clear: both;
+}
+.unb li { 
+  float: left;
+  width: 50px; height: 20px;
+  margin: 0px 10px;
+  background-color: #333;
+}
+
+/* _______________________________________gnb 정리하기 */
+.gnb {
+  width: auto; height: 35px;
+  margin-top: 35px;
+  background-color: #ccc;
+}
+.gnb ul {
+  width: 100%;
+  padding: 5px 0; box-sizing: border-box;
+}
+.gnb ul::after {
+  content: ""; display: block; width: 100%; height: 0; clear: both;
+}
+.gnb li {
+  float: left;
+  width: 70px; height: 25px;
+  margin: 0 8px;
+  background-color: #555;
+}
+
 
 
 /* ________________________________________슬라이드박스____________ */
@@ -55,6 +109,8 @@ body { margin:0;}
   margin: auto;
   background-color: #eee;
 }
+
+
 /* ________________________________________뉴박스_____________ */
 #newBox {
   width: 100%; min-width: 940px; 
@@ -67,16 +123,33 @@ body { margin:0;}
   margin: auto;
   background-color: #ccc;
 }
+
+
+/* _________________________________________뉴박스 콘텐츠 카드 */
 .area_content {
   width:  940px; height: 370px;
   margin: auto; margin-top: 48px;
   background-color: #ccc;
 }
+.area_newBox::after{
+  content: ""; display: block; width:100%; height: 0; clear: both;
+}
+.area_card {
+  float: left;
+  width: 300px; height: 370px;
+  background-color: aquamarine;
+}
+.area_content .area_card.center {
+  margin: 0 20px;
+}
+
 .area_indicator{
   width: 140px; height: 30px;
   margin: auto; margin-top: 50px; 
   background-color: #ccc;
 }
+
+
 /* _______________________________________서브박스_______________ */
 #subBox {
   width: 100%; height: 350px;
@@ -87,6 +160,30 @@ body { margin:0;}
   height: 300px;
   background-color: #888;
 }
+.area_subBox {
+  float: left;
+  width: 50%;
+}
+.area_subBox.left::after {
+  content: ""; display: block; width: 100%; height: 0; clear: both;
+}
+.area_subBox.right::after {
+  content: ""; display: block; width: 100%; height: 0; clear: both;
+}
+.ad_subBox1 {
+  width: 460px; height: 300px;
+  background-color: aquamarine;
+}
+.area_subBox.right {
+  padding-top: 52px; box-sizing: border-box;
+}
+.ad_subBox2 {
+  width: 400px; height: 200px;
+  margin-right: 70px;
+  background-color: aquamarine;
+}
+
+
 /* _________________________________________베스트박스____________ */
 #bestBox {
   width: 100%; height: 700px;
