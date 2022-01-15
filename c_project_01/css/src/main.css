@@ -1,0 +1,169 @@
+@charset "utf-8";
+/* main.css */
+
+/* reset.css =============================== */
+body { margin: 0;}
+h1,h2,h3,h4,h5,h6 {margin: 0;}
+ul,ol,dl,li,dt,dd { margin: 0; padding: 0;}
+ol,ul,li { list-style: none;}
+
+
+/* common.css _________________________________________ */
+.max_width_01 {
+ width: 95%; min-width: 940px; max-width: 1280px;
+ margin: auto;
+}
+
+
+/* design ================================== */
+#wrap { 
+  width: 100%; min-width: 960px; /* min-width: 1440px; */ 
+  height: auto; min-height: 500px;
+  margin: auto;
+}
+
+/* #headBox --------------------------------------------------- */
+#headBox { 
+  width: 100%; height: auto; 
+  padding: 20px 50px 10px; box-sizing: border-box;
+  background-color: #ccc;
+}
+.area_head {
+  width: 100%; /* max-width: 1440px; */ 
+  height: auto;
+  margin: auto;
+}
+.area_head::after {
+  content:""; display: block;  clear: both;
+}
+#logo { 
+  float:left; 
+  width: 120px; height: 70px; 
+  background-color: #777;
+}
+#navBox { 
+  float:right; 
+  width: 510px; height: 70px; 
+  background-color: #777;
+}
+
+/* #slideBox ____________________________________________________ */
+#slideBox { 
+  width: 100%; height: 600px; 
+  padding-top: 100px; box-sizing: border-box;
+  background-color: #aaa;
+}
+#adCon_01 { 
+  width: 780px; height: 400px;
+  margin: auto; 
+  background-color: #ddd;
+}
+
+/* #newBox ____________________________________________________ */
+#newBox { 
+  width: 100%; height: 700px; 
+  padding-top: 62px; box-sizing: border-box;
+  background-color: #eee; 
+}
+.area_title {
+  width: 940px; height: 70px;
+  margin: auto;
+  background-color: #aaa;
+}
+.area_content {
+  width: 940px; height: 370px;
+  margin: 48px auto 50px;
+  background-color: #aaa;
+}
+.area_indicator {
+  width: 140px; height: 30px;
+  margin: auto;
+  background-color: #ccc;
+}
+
+/* #subBox ____________________________________________________ */
+#subBox { 
+  width: 100%; height: 350px;
+  padding-top: 50px; box-sizing: border-box; 
+  background-color: #aaa;
+}
+#subBox .area {
+  
+  height: 300px;
+  
+  background-color: #fff;
+}
+
+/* #bestBox ____________________________________________________ */
+#bestBox { 
+  width: 100%; height: 700px; 
+  padding-top: 175px; box-sizing: border-box;
+  background-color: #eee;
+}
+#bestBox .area {
+ 
+  height: 380px;
+ 
+  background-color: #fff;
+}
+
+/* #galleryBox ____________________________________________________ */
+#galleryBox { 
+  width: 100%; height: 750px; 
+  padding-top: 75px; box-sizing: border-box;
+  background-color: #ccc;
+}
+#galleryBox .area_title {
+  background-color: #fff;
+}
+#galleryBox .area_content {
+  height: 420px; 
+  background-color: #fff;
+}
+
+/* #sponsorBox ____________________________________________________ */
+#sponsorBox { 
+  width: 100%; height: 100px; 
+  padding: 10px 0; box-sizing: border-box;
+  background-color: #999;
+}
+.sponsor_area { 
+   height: 80px; 
+  
+  background-color: #fff;
+}
+
+/* #footerBox ____________________________________________________ */
+#footerBox { 
+  width: 100%; height: 450px;
+  padding-top: 68px; box-sizing: border-box;
+   background-color: #777;
+}
+.area_foot {
+  height: auto;
+  
+}
+.info_logo { 
+  width: 120px; height: 70px;
+  margin-bottom: 45px;
+  background-color: #aaa;
+}
+.info_company { 
+  width: 100%; height: 135px;
+  background-color: #aaa;
+}
+
+/* 코드 작성 순서 ---------------------------------- */
+
+.selector {
+  content: "";
+  display: block;
+  position: static;
+  float: left;
+  width: 100%; min-width: ; max-width: ;
+  height: 20px; min-height: ; max-height: ;
+  margin: ; padding: ; border: 0; box-sizing: border-box;
+  font-size: 10px; font-weight: 100; color:#fff;
+  background-color: #fff;
+  effect: ; 
+}
