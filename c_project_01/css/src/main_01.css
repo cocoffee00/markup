@@ -1,19 +1,35 @@
 @charset "utf-8";
 /* main_01.css */
 
+/* reset.css================================================ */
 body { margin:0;}
 
-#wrap { 
-  width: 1440px; height: auto; min-height: 500px;
+/* common ================================================== */
+.max_width {
+  width: 95%; min-width: 940px; max-width: 1200px;
   margin: auto;
-  background-color: antiquewhite;
 }
+
+#wrap { 
+  width: 100%; min-width: 940px;
+  height: auto; 
+  margin: auto;
+}
+
+/* design====================================================== */
 
 /* ______________________________________헤드박스______________ */
 #headBox { 
-  width: 1440px; height: 100px;
-  padding-top: 20px; box-sizing: border-box;
+  width: 100%; height: auto;
+  padding: 20px 50px; box-sizing: border-box;
   background-color: #555;
+}
+.area_head{
+  width: auto; max-width: 1440px; 
+  height: auto;
+}
+.area_head::after {
+  content: ""; display: block; width:100%; height: 0;; clear: both;
 }
 #logo {
   float: left;
@@ -29,7 +45,8 @@ body { margin:0;}
 
 /* ________________________________________슬라이드박스____________ */
 #slideBox {
-  width: 1440px; height: 600px;
+  width: 100%; min-width: 940px; 
+  height: 600px;
   padding-top: 100px; box-sizing: border-box;
   background-color: #777;
 }
@@ -40,7 +57,8 @@ body { margin:0;}
 }
 /* ________________________________________뉴박스_____________ */
 #newBox {
-  width: 1440px; height: 700px;
+  width: 100%; min-width: 940px; 
+  height: 700px;
   padding-top: 62px; box-sizing: border-box;
   background-color: #eee;
 }
@@ -59,28 +77,64 @@ body { margin:0;}
   margin: auto; margin-top: 50px; 
   background-color: #ccc;
 }
-/* ______________________________________________________ */
+/* _______________________________________서브박스_______________ */
 #subBox {
-  width: 1440px; height: 350px;
+  width: 100%; height: 350px;
+  padding-top: 50px; box-sizing: border-box;
   background-color: #ccc;
 }
-/* _____________________________________________________ */
+#subBox .area {
+  height: 300px;
+  background-color: #888;
+}
+/* _________________________________________베스트박스____________ */
 #bestBox {
-  width: 1440px; height: 700px;
+  width: 100%; height: 700px;
+  padding-top: 175px; box-sizing: border-box;
   background-color: #eee;
 }
-/* ________________________________________________________ */
-#galleryBox {
-  width: 1440px; height: 750px;
-  background-color: #666;
-}
-/* _______________________________________________________ */
-#sponsorBox {
-  width: 1440px; height: 100px;
+#bestBox .area {
+  height: 380px;
   background-color: #bbb;
 }
-/* __________________________________________________________ */
-#footerBox {
-  width: 1440px; height: 450px;
+/* _________________________________________갤러리박스_______________ */
+#galleryBox {
+  width: 100%; height: 750px;
+  padding-top: 75px; box-sizing: border-box;
+  background-color: #666;
+}
+#galleryBox .area_title {
   background-color: #333;
+}
+#galleryBox .area_content {
+  height: 420px;
+  margin-top: 48px;
+}
+/* _________________________________________스폰서박스______________ */
+#sponsorBox {
+  width: 100%; height: 100px;
+  padding: 10px; box-sizing: border-box;
+  background-color: #bbb;
+}
+.sponsorBox {
+  height: 80px;
+  background-color: #ddd;
+}
+/* __________________________________________푸터박스________________ */
+#footerBox {
+  width: 100%; height: 450px;
+  padding-top: 68px; box-sizing: border-box;
+  background-color: #333;
+}
+.area_footer {
+  height: auto; 
+}
+.info_logo {
+  width: 120px; height: 70px;
+  background-color: #ccc;
+}
+.info_company {
+  width: 940px; height: 135px;
+  margin-top: 45px;
+  background-color: #ccc;
 }
