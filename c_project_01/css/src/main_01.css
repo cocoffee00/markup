@@ -10,7 +10,7 @@ li { list-style: none;}
 
 /* common ================================================== */
 .max_width {
-  width: 95%; min-width: 940px; max-width: 1200px;
+  width: 95%; min-width: 940px; max-width: 1280px;
   margin: auto;
 }
 
@@ -134,14 +134,15 @@ li { list-style: none;}
 .area_newBox::after{
   content: ""; display: block; width:100%; height: 0; clear: both;
 }
-.area_card {
+.area_newBox li {
   float: left;
   width: 300px; height: 370px;
   background-color: aquamarine;
 }
-.area_content .area_card.center {
+.area_newBox ul>.center {
   margin: 0 20px;
 }
+
 
 .area_indicator{
   width: 140px; height: 30px;
@@ -175,11 +176,11 @@ li { list-style: none;}
   background-color: aquamarine;
 }
 .area_subBox.right {
-  padding-top: 52px; box-sizing: border-box;
+  padding-top: 52px; padding-right: 70px; box-sizing: border-box;
 }
 .ad_subBox2 {
+  float: right;
   width: 400px; height: 200px;
-  margin-right: 70px;
   background-color: aquamarine;
 }
 
@@ -194,6 +195,22 @@ li { list-style: none;}
   height: 380px;
   background-color: #bbb;
 }
+.area::after {
+  content: ""; display: block; width: 100%; height: 0; clear: both;
+}
+#bestBox li {
+  float: left;
+  width:  240px; height: 380px;
+  background-color: aquamarine;
+}
+#bestBox li.Box {
+  margin:0 40px;
+}
+#bestBox li.first.Box {
+  width: 230px; height: 380px;
+  background-color: darkorange;
+}
+
 /* _________________________________________갤러리박스_______________ */
 #galleryBox {
   width: 100%; height: 750px;
@@ -207,16 +224,48 @@ li { list-style: none;}
   height: 420px;
   margin-top: 48px;
 }
+.area_content>.gallery_after {
+  float: left;
+  width: auto; 
+}
+.gallery_after::after {
+  content: ""; display: block; width: 100%; height: 0px; clear: both;
+}
+.gallery_after>.area_img {
+  width: 540px; height: 420px;
+  background-color: darkseagreen;
+}
+.gallery_after>.area_list {
+  width: 320px; height: 270px;
+  background-color: darkseagreen;
+}
+.area_content>.left {
+  padding: 150px 0 0 80px; box-sizing: border-box;
+}
+
+
+
 /* _________________________________________스폰서박스______________ */
 #sponsorBox {
   width: 100%; height: 100px;
   padding: 10px; box-sizing: border-box;
   background-color: #bbb;
 }
-.sponsorBox {
+.sponsor_box {
   height: 80px;
   background-color: #ddd;
 }
+.sponsor_box::after {
+  content: ""; display: block; width: 100%; height: 0px; clear: both;
+}
+.sponsor_logo li {
+  float: left;
+  width: 140px; height: 80px;
+  margin: 0 10px;
+  background-color: darkseagreen;
+}
+
+
 /* __________________________________________푸터박스________________ */
 #footerBox {
   width: 100%; height: 450px;
@@ -231,7 +280,37 @@ li { list-style: none;}
   background-color: #ccc;
 }
 .info_company {
-  width: 940px; height: 135px;
+  height: 135px;
   margin-top: 45px;
   background-color: #ccc;
+}
+
+.test::after {
+  content: ""; display: block; width: 100%; height: 0px; clear: both;
+}
+.info_wrap {
+  float: left;
+}
+/* .info_company::after {
+  content: ""; display: block; width: 100%; height: 0px; clear: both;
+}
+.footer_info::after {
+  content: ""; display: block; width: 50%; height: 0px; clear: both;
+} */
+.info_wrap::after {
+  content: ""; display: block; width: 100%; height: 0px; clear: both;
+}
+.info_wrap.second {
+  float: right;
+}
+
+.info_box.first {
+  width: 500px; height: 200px;
+  background-color: darkseagreen;
+}
+.info_box.second {
+  float: right;
+  width: 200px; height: 160px;
+  margin-top: 40px;
+  background-color: darkseagreen;
 }
