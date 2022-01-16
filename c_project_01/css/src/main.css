@@ -155,7 +155,7 @@ ol,ul,li { list-style: none;}
 
 /* 코드 작성 순서 ---------------------------------- */
 
-.selector {
+/* .selector {
   content: "";
   display: block;
   position: static;
@@ -166,4 +166,4 @@ ol,ul,li { list-style: none;}
   font-size: 10px; font-weight: 100; color:#fff;
   background-color: #fff;
   effect: ; 
-}
+} */
