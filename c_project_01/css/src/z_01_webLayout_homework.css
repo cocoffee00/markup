@@ -13,7 +13,7 @@ ol,ul,li { list-style: none;}
 }
 
 /* ==============코드 정리하기!!!========================= */
-/* =================================================design */
+/* ==========================================================design */
 #wrap {
   width: 100%; min-width: 940px; 
   height: auto; 
@@ -39,6 +39,7 @@ ol,ul,li { list-style: none;}
   width: 120px; height: 70px;
   background-color: #ccc;
 }
+
 #navBox {
   float: right;
   width: 510px; height: 70px;
