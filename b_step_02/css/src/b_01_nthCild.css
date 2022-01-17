@@ -1,0 +1,66 @@
+/* b_01_nthCild.css */
+
+.none { display: none;}
+.code_exam {
+  width: 900px; height: auto; min-height: 1000px;
+  margin: auto; padding: 20px; box-sizing: border-box;
+  background-color: #eee;
+}
+
+.code_exam h1 {
+  width: 100%; height: auto;
+  padding-bottom: 20px;
+  font-size: 20px; font-weight: 900;
+  text-align: center;
+}
+
+.code_exam .part {
+  width: 90%; height: auto;
+  margin: 20px auto 0; padding: 20px; 
+  border: 1px solid #555;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.code_exam h2 {
+  width: 100%; height: auto;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #555;
+  font-weight: 700;
+}
+
+.code_exam .n_child, .code_exam .n_child_02 {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fee;
+}
+
+.code_exam .list {
+  list-style:  decimal;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+/* ______________________________________________________________ */
+
+.n_child li { font-weight: 700; }
+.n_child li:first-child { color: #a06}
+.n_child li:nth-child(1) { text-decoration: underline; }
+.n_child li:nth-child(3) { color: blue }
+.n_child li:nth-child(10) { color: chocolate }
+.n_child li:last-child { 
+  color: cornflowerblue; 
+  text-transform: uppercase; 
+  margin-bottom: 0;
+}  
+.n_child li:nth-last-child(1) { font-size: 24px;}
+.n_child li:nth-last-child(4) { font-size: 20px;}
+
+.n_child li:nth-child(3n) { list-style-type: disc; }
+.n_child li:nth-child(3n + 2) { list-style-type: lower-alpha; font-weight: 100; }
+
+/* ====================================================== */
+
+.n_child_02 .list:nth-child(1) { font-weight: 700; color: red; }
+.n_child_02 .list:nth-child(3) { font-weight: 700; color: red; }
+.n_child_02 dd:nth-last-child(4) { font-weight: 700; color: red; }
