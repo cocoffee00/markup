@@ -1,0 +1,59 @@
+/* b_02_nthOfType.css */
+
+
+.none { display: none;}
+.code_exam {
+  width: 900px; height: auto; min-height: 1000px;
+  margin: auto; padding: 20px; box-sizing: border-box;
+  background-color: #eee;
+}
+
+.code_exam h1 {
+  width: 100%; height: auto;
+  padding-bottom: 20px;
+  font-size: 20px; font-weight: 900;
+  text-align: center;
+}
+
+.code_exam .part {
+  width: 90%; height: auto;
+  margin: 20px auto 0; padding: 20px; 
+  border: 1px solid #555;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.code_exam h2 {
+  width: 100%; height: auto;
+  margin-bottom: 10px; padding-bottom: 10px;
+  border-bottom: 1px solid #555;
+  font-weight: 700;
+}
+
+.code_exam .n_of_01, .code_exam .n_child_02 {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fee;
+}
+
+.code_exam .list {
+  list-style:  decimal;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+/* =========================================================== */
+
+.n_of_01 dt:nth-of-type(1) { color: darkcyan;}
+.n_of_01 dt:nth-of-type(2) { color: deeppink;}
+/* .n_of_01 dd:nth-of-type(3n) { border: 1px solid darkslategray} */
+.n_of_01 dd:nth-of-type(3n+2) { border: 1px solid darkgoldenrod}
+.n_of_01 dd:first-of-type { font-size: 23px;}
+.n_of_01 dt:last-of-type { font-size: 20px; font-weight: 700;}
+.n_of_01 dd:nth-last-of-type(2) { border: 2px dotted #666}
+
+.n_of_01 dd:empty { height: 30px; background-color: white;}
+.n_of_01 dd:not(.list) { background-color: #add;}
+
+.n_of_01 dd::first-letter { font-size: 30px;} 
+/* 요소 내용중 첫번째 글자만 바뀜 - dd태그내의 content_01 중 c만 크기 바뀜 */
