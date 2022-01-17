@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* b_04_position.css */
+
+.ex_wrap > ul {
+  width: 100%; height: auto;
+  border: 1px solid #333;
+  box-sizing: border-box;
+}
+
+.ex_wrap li {
+  float: left;
+  width: 100px; height: 100px;
+  /* background-color: white;
+  background-image: linear-gradient(45deg, #acf, #fcd); */
+}
+
+.default { background-color: #23916E;}
+.static { background-color: #D8FDA5;}
+.fixed { background-color: #914C42;}
+.absolute { background-color: #0ACBCA;}
+.relative { background-color: #5D084A;}
+.default { background-color: #1F69C2;}
+
+/* __________________________________________________ */
+
+#wrap {
+  height: 5000px;
+}
+.static {
+  position: static;
+  top: 10000px; left: 5111px; z-index: -400;
+}
+.fixed {
+  position: fixed; 
+  /* 자신의 부모 기준(ul) 가장 상단에 붙어있음 그래서 맨 앞의 default를 무시하고(어차피 디폴트보다 늦게 만들어져서 우선순위 높음) 그 자리로 앞으로(시각적으로는 덮어쓰기 됨) */
+  top: 0; left: 90px;
+  z-index: 10;
+}
+  /* top또는 left를 0을 주면 브라우저 화면 기준 맨 위와 맨 왼쪽으로 요소가 붙음, 화면을 줄여도 스크롤이 길어도 브라우저 기준 고정, 스크롤을 따라가지 않음*/
+  /* top,bottom 중 top이 우선순위/ left와 right 중 left 우선순위 */
+
+
+/* .fixed {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  margin: auto;
+} */
+/* 포지션 픽스드에 상하좌우:0, 그리고 마진 오토를 주면 해당 요소는
+화면의 정 중앙에 위치한다. */
+/* 위와 아래에 같은 값을 주고 마진 오토를 줘도 똑같이 중앙에 위치하나
+한쪽에 조금이라도 값이 더 많으면 top쪽에 조금 더 마진이 들어감(위와 아래값을 더해서 반으로 나눈 값만큼)
+ex) top:50px, bottom:0; 이면 50+0=50 에서 반으로 나눈 25px만큼 top에 마진이 적용됨
+*/
+.absolute {
+  position: absolute;
+  bottom:-50px; left:0;
+  /* z-index: -10; */
+}
+/* 픽스드처럼 포지션:앱솔루트만 쓰면 부모요소를 따라 맨 위로감, 상하좌우도 같음.
+그리고 상하좌우 값에 따라 위치하나 스크롤을 내려보면 스크롤을 따라감 
+정해진 위치에 위치하며 스크롤을 내리면 사라짐*/
+
+/* z-index 값이 높을수록 화면 레이아웃상 가장 위에 위치
+마이너스 값을 주면 마치 유리창 너머처럼 시각적으로 확인은 가능하나 드래그같은 직접적인 선택은 불가능하다
+*/
+
+/* 픽스드와 앱솔루트는 값을 주면 원래있던 자리를 벗어나고 그 다음 요소가 그 자리를 매꿈 / 래러티브는 원래 자리 그대로 유지 */
+.relative {
+  position: relative;
+  top: 50px; left: -400px;
+  z-index: -10;
+}
+
+.ex_wrap > ul {
+  position: relative;
+  top: 200px; left: -50px;
+}
+/* 앱솔루트는 포지션을 가진 부모요소 ul 을 기준으로 적용됨
+앱솔루트의 부모격이 레러티브 요소를 가지고 있으면 그 레러티브를 기준으로(속성을 기준으로) 잡겠다
+ex)부모가 top: 50px을 가지고 있으면 앱솔루트는 그 50을 기준을 잡고 적용됨 */
