@@ -1,0 +1,19 @@
+
+/* common.css _________________________________________ */
+.max_width_01 {
+  width: 95%; min-width: 940px; max-width: 1280px;
+  margin: auto;
+ }
+
+.clearfix::after,
+.clearfix::after {
+  content: ""; display: block; width: 100%; height: 0; clear: both;
+}
+.none { display: none;}
+
+.blind { 
+  /* 방법 1: font-size: 0; */
+  /* 방법2 : */
+  width: 0; height: 0;
+  overflow: hidden;
+}
