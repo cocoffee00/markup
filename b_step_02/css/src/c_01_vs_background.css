@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+
+.img_area {
+  float:left;
+  width: 200px; height: 200px;
+  margin-left: 150px;
+  border: 1px solid #777; border-radius: 5px;
+}
+
+.img_01 { overflow: hidden;}
+.img_01 img {
+  width: auto; height: auto;
+  min-width: 100%; min-height: 100%;
+  margin-top: -30px;
+}
+
+.img_02 {
+  background-image: url("../../img/card_image/mini_card_bg-3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.img_02 > span {
+  display: block;
+  width: 0; height: 0; overflow: hidden;
+}
+
+/* .img_03 방법은 권장하지 않음 */
+.img_03 {
+  background: center no-repeat url("../../img/card_image/mini_card_bg-5.png");
+  background-size: cover;
+  font-size: 0;
+}
+
+/* _______________________________________________________________ */
+
+.bg_02 > li {
+  width: 500px; height: 200px;
+  margin-bottom: 100px;
+  border: 1px solid #555
+}
+
+/* .bg_02 > li:first-child {
+  background-image: url("../../img/icon/download_tray.png"), url("../../img/icon/download_tray.png") ;
+  background-repeat: repeat-y, repeat-x;
+} */
+
+.bg_02 > li:first-child {
+  background-image: url("../../img/icon/download_tray.png");
+  background-repeat: repeat-y;
+  /* background-repeat: repeat ||(<-또는) no-repeat || repeat-x || repeat-y; */
+}
+
+.bg_02 > li:nth-child(2) {
+  background-image: url("../../img/icon/location_pointer.png");
+  background-repeat: no-repeat;
+  /* background-position-x: center;
+  background-position-y: center; */
+  background-position: left bottom;
+  /* 요소안에 이미지를 하나만 쓸때 포지션x,y 둘다 잡아준다  */
+}
+
+.bg_02 > li:nth-child(3) {
+  background-image: url("../../img/icon/location_pointer.png");
+  background-repeat: no-repeat;
+  /* background-position: center center; */
+  background-position: 0% 50%; /* 앞이x, 뒤가y 꼭 생각하기 */
+}
+
+/* 
+.bg_02 > li:nth-child(4) {
+  background-image: url("../../img/icon/locked.png");
+  background-repeat: no-repeat;
+  background-position: 80% 0%;
+ } 
+  앞이x, 뒤가y 꼭 생각하기 
+  감싸는 요소의 80%과 이미지 요소자체의 80%가 일치하게 적용됨(그래서 이미지의 끝 부분으로 % 간격이 정해지는것이 아님) 
+*/
+  .bg_02 > li:nth-child(4) {
+    height: 250px;  
+    background-image: url("../../img/card_image/mini_card_bg-4.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%; 
+    
+    background-size: contain;
+    /* background-size: cover || contain; */
+}
+.bg_02 > li:nth-child(5) {
+  height: 300px;
+  background-image: url("../../img/card_image/mini_card_bg-5.png");
+  background-repeat: no-repeat; background-position: 50% 50%;
+  background-size: auto 100%; /* width, height 중 하나는 auto로 지정 권장*/
+}
+
+.bg_02 > li:nth-child(6) {
+  background-image: url("../../img/background/andrew-svk-MCYR8cJYQRM-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  background-attachment: fixed;
+  /* background-attachment: scroll || fixed; */
+  /* 백그라운드 포지션과 사이즈에 영향을 받음 */
+}
+
+.bg_02 > li:nth-child(7) {
+  width: 100%;
+  background-image: url("../../img/card_image/mini_card_bg-7.png"), 
+                    url("../../img/card_image/mini_card_bg-9.png"),
+                    url("../../img/icon/refresh.png");
+  background-repeat: repeat-y, repeat-y, repeat;
+  background-position: 0 0,100% 0, 0 50%;
+  background-size: auto 50%, auto 50%, auto 30%;
+}
+
+.bg_02 > li:nth-child(8) {
+  background-image: url("../../img/background/andrew-svk-MCYR8cJYQRM-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 150% auto;
+
+  padding: 50px;
+  border: 30px dotted orange;
+  font-size: 100px; font-weight: 700; line-height: 1.1; text-align: center;
+
+  /* background-clip: border-box; */
+  /* background-clip: padding-box; */
+  /* background-clip: content-box; */
+  background-clip: text;
+  -webkit-background-clip: text; /*글자에 마스킹 처리됨 */
+  /* webkit : 실험작이라는 뜻 (moz,ms 등) */
+  color: transparent;
+
+}
+
+/* .bg_02 > li:nth-child(8) span {
+  display: block;
+  width: 100%; height: 100%;
+  background-color: rgba(255, 239, 213, 0.445);
+} */
