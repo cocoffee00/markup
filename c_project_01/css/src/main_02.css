@@ -1,0 +1,283 @@
+@charset "utf-8";
+/*  main_02.css */
+
+.first_margin li:first-child { margin-left: 0;}
+
+#wrap {
+  width: 100%; min-width: 960px; 
+  /* width: 1440px; */
+  height: auto; min-height: 700px;
+  margin: auto; padding: 100px 0 10px;
+}
+
+/* =======================================================headBox */
+#headBox {
+  position: fixed; top: 0; left: 0; z-index: 1000;
+  width: 100%; height: 100px;
+  padding: 20px 100px 10px; box-sizing: border-box;
+  background-color: #333;
+}
+.area_head {
+  width: 100%; max-width: 1440px;
+  margin: auto;
+}
+.area_head::after {
+  content: ""; display: block; width: 100%; height: 0; clear: both;
+}
+/* _____________________________로고 */
+#logo {
+  float: left;
+  width: 120px; height: 70px;
+  background-color: #555;
+}
+h1 { 
+  font-size: 3rem;
+  font-weight: 700;
+}
+/* ____________________________네비바 */
+#navBox {
+  float: right;
+  width: 510px; height: auto;
+}
+.unb ul, .gnb ul {
+  width: 100%; height: auto; box-sizing: border-box;
+}
+
+/* ______________________________네비바 - unb */
+.unb ul { padding: 3px 5px; }
+.unb {
+  float: right;
+  width: 270px; height: 26px;
+  margin-bottom: 10px;
+}
+.unb li {
+  float: left;
+  width: 50px; height: 20px;
+  margin-left: 20px;
+  background-color: aqua;
+}
+
+/* ________________________________네비바 - gnb */
+.gnb ul { padding: 4px 5px; }
+.gnb {
+  float: right;
+  width: 510px; height: 34px;
+}
+.gnb li {
+  float: left;
+  margin-left: 16px;
+  width: 70px; height: 25px;
+  background-color: aqua;
+}
+
+
+
+/* =========================================================slideBox */
+#slideBox {
+  position: relative;
+  width: 100%; height: 600px;
+  padding-top: 100px; box-sizing: border-box;
+  background-color: #444;
+}
+/* _________________________슬라이드 버튼 */
+.slide_btn {
+  position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto;
+  width: 100%; min-width: 940px; max-width: 1440px; height: 0;
+}
+.slide_btn button {
+  width: 60px; height: 40px;
+  background-color: cyan;
+}
+.slide_btn .next { float: right;}
+.slide_btn .prev { float: left;}
+
+/* __________________________슬라이드 */
+#adCon {
+  width: 780px; height: 400px;
+  margin: auto;
+  background-color: #666;
+}
+
+/* ===============================================================newBox */
+#newBox {
+  position: relative;
+  width: 100%; height: 700px;
+  padding-top: 62px; box-sizing: border-box;
+  background-color: #555;
+}
+/* _____________________________뉴박스 타이틀 */
+.area_title {
+  width: 940px; height: 70px;
+  margin: 0 auto 48px;
+  background-color: #777;
+}
+/* ______________________________뉴박스 인디케이터 */
+.area_indicator {
+  position: absolute; bottom: 70px; left: 0; right: 0;
+  margin: auto;
+  width: 140px; height: 30px;
+}
+.area_indicator li {
+  float: left;
+  width: 30px; height: 30px;
+  margin-left: 25px;
+  border: 0 solid ;
+  border-radius: 30px;
+  background-color: aqua;
+}
+/* ____________________________뉴박스 컨텐츠 */
+.area_content {
+  width: 940px; height: 370px;
+  margin: auto;
+  background-color: #777;
+}
+.area_content ul { width: 100%; height: 100%;}
+.area_content li {
+  float: left;
+  margin-left: 20px;
+  width: 300px; height: 370px;
+  background-color: aqua;
+}
+
+/* ===============================================================subBox */
+#subBox {
+  position: relative;
+  width: 100%; height: 350px;
+  background-color: #666;
+}
+#subBox>.area {
+  position: absolute; bottom: 0; left: 0; right: 0; margin: auto;
+  height: 300px;
+  background-color: #888;
+}
+/* __________________________서브박스 타이틀 */
+.sub_area {
+  float: right;
+  width: 400px; height: 200px;
+  margin-top: 52px; margin-right: 70px;
+  background-color: aqua;
+}
+/* __________________________서브박스 이미지 */
+.sub_area_img {
+  float: left;
+  width: 460px; height: 300px;
+  background-color: aqua;
+}
+
+
+/* ================================================================bestBox */
+#bestBox {
+  width: 100%; height: 700px;
+  padding-top: 175px; box-sizing: border-box;
+  background-color: #777;
+}
+#bestBox>.area {
+  height: 380px;
+  background-color: #999;
+}
+/* _____________________________베스트박스 타이틀 */
+.best_area { 
+  float: left;
+  width: 230px; height: 380px;
+  background-color: coral;
+}
+/* _____________________________베스트박스 카드리스트 */
+.best_card_list { 
+  float: right;
+  width: 800px; height: 380px;
+  background-color: cornsilk;
+}
+.best_card_list ul{ width: 100%; height: 100%;}
+.best_card_list li { 
+  float: left;
+  margin-left: 40px;
+  width: 240px; height: 380px;
+  background-color: cyan;
+}
+
+
+/* ==============================================================galleryBox */
+#galleryBox {
+  width: 100%; height: 750px;
+  padding-top: 75px; box-sizing: border-box;
+  background-color: #888;
+}
+/* ________________________갤러리 타이틀 */
+.area_title {
+  
+}
+/* _________________________갤러리 컨텐츠 */
+#galleryBox>.area_content {
+  width: 940px; height: 420px;
+  margin: 48px auto 0;
+  background-color: #ccc;
+}
+.gallery_img {
+  float: left;
+  width: 540px; height: 420px;
+  background-color: cyan;
+}
+.gallery_list { 
+  float: right;
+  width: 320px; height: 270px;
+  margin-top: 150px;
+  background-color: cyan;
+}
+
+
+/* ===============================================================sponsorBox */
+#sponsorBox {
+  width: 100%; height: 100px;
+  padding-top: 10px; box-sizing: border-box;
+  background-color: #999;
+}
+.sponsor_area {
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+/* .sponsor_area ul { width: 100%; height: 100%;} */
+.sponsor_area li {
+  float: left;
+  width: 140px; height: 80px;
+  margin-left: 20px;
+  background-color: cyan;
+}
+
+/* ===================================================================footBox */
+#footBox {
+  position: relative;
+  width: 100%; height: 450px;
+  padding-top: 68px; box-sizing: border-box;
+  background-color: #ccc;
+}
+.info_area {
+  height: auto;
+}
+.info_area::after {
+  content: ""; display: block; width: 100%; height: 0; clear: both;
+}
+/* __________________________푸터 로고 */
+.info_logo {
+  width: 120px; height: 70px;
+  margin-bottom: 45px;
+  background-color: #888;
+}
+
+/* ____________________________회사 소개 */
+.info_company {
+  position: absolute; bottom: 70px;
+  width: 100%; height: 200px;
+  background-color: #888;
+}
+.info_company>.info_area {
+  float: left;
+  width: 500px; height: 200px;
+  background-color: cyan;
+}
+.area_sns {
+  float: right;
+  width: 200px; height: 160px;
+  margin-top: 40px;
+  background-color: cyan;
+}
