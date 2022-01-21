@@ -11,9 +11,22 @@
 }
 .none { display: none;}
 
-.blind { 
-  /* 방법 1: font-size: 0; */
-  /* 방법2 : */
-  width: 0; height: 0;
+.blind_area a>span,
+.blind_area button>span,
+.blind {
+  display: block; 
+  position: absolute; z-index: -1;
+  width: 0; height: 0; 
   overflow: hidden;
+ }
+
+.blind_area  a {
+  display: block; 
+  width: 100%; height: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
+
+
+.first_margin > li:first-child { margin-left: 0;}
+.last_margin > li:last-child { margin-right: 0;}
