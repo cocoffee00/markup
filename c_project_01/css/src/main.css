@@ -124,6 +124,18 @@
   margin: auto;
   background-color: #ccc;
 }
+.area_indicator li {
+  float: left;
+}
+.area_indicator button {
+  width: 30px; height: 30px;
+  margin-left: 16px;
+  border: 1px solid #777;
+  border-radius: 50px;
+  background-color: #777;
+}
+
+
 
 .area_content {
   width: 940px; height: 370px;
