@@ -8,7 +8,8 @@ body {
 h1,h2,h3,h4,h5,h6,p,pre,q,blockquote,ul,ol,dl,dt,dd,img {
    margin: 0; padding: 0; border: 0;
    font-size: 100%; 
-   font: inherit;
+   font-family: inherit;
+   line-height: 120%;
    vertical-align: baseline;
   }
 
