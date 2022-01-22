@@ -10,6 +10,9 @@
   margin: auto; padding: 100px 0 10px;
 }
 
+
+
+
 /* =======================================================headBox */
 #headBox {
   position: fixed; top: 0; left: 0; z-index: 1000;
@@ -93,6 +96,10 @@
   font-weight: 700;
   text-transform: capitalize;
 }
+
+
+
+
 
 
 /* =========================================================slideBox */
@@ -186,6 +193,11 @@
   background-image: url("../../img/main_page/slideBox/slide_01_img.png");
 }
 
+
+
+
+
+
 /* ===============================================================newBox */
 #newBox {
   position: relative;
@@ -222,9 +234,6 @@
   background-position: 0px -54px;
 }
 
-
-
-
 /* ____________________________뉴박스 컨텐츠 */
 .area_content {
   width: 940px; height: 370px;
@@ -247,6 +256,11 @@
 }
 .area_content li a:focus { outline: 0.75rem solid #FFBD55;}
 /* .area_content li a:hover { background-color: #aaa; } */
+
+
+
+
+
 
 
 /* ===============================================================subBox */
@@ -316,6 +330,12 @@
   background-position: 50% 50%;
 }
 
+
+
+
+
+
+
 /* ================================================================bestBox */
 #bestBox {
   width: 100%; height: 700px;
@@ -328,10 +348,41 @@
 }
 /* _____________________________베스트박스 타이틀 */
 .best_area { 
+  position: relative;
   float: left;
-  width: 230px; height: 380px;
+  width: 230px; height: 355px;
   background-color: coral;
 }
+.best_area .area_title{
+  width: auto; height: auto;
+}
+.best_area p {
+  width: auto; height: auto;
+  margin-top: 30px;
+  font-size: 1rem;
+}
+.best_area .best_btn {
+  position: absolute; bottom: 60px;
+  width: 100%; height: 30px;
+  background-color: aqua;
+}
+.best_area .best_btn button {
+  width: 100px; height: 30px;
+  border-radius: 7px;
+  background-color: #c4c4c4;
+}
+.best_area .best_btn button:nth-child(1){
+  float: right;
+}
+.best_area .best_btn button:nth-child(2){
+  float: left;
+}
+.best_area .more_btn {
+  position: absolute; bottom: 0;
+  width: 100%; height: 50px;
+  background-color: #1A5D54;
+}
+
 /* _____________________________베스트박스 카드리스트 */
 .best_card_list { 
   float: right;
@@ -343,50 +394,73 @@
   float: left;
   margin-left: 40px;
   width: 240px; height: 380px;
-  background-color: cyan;
+  border: 1px solid #757575;
+  box-sizing: border-box;
 }
+
+
+
+
+
 
 
 /* ==============================================================galleryBox */
 #galleryBox {
   width: 100%; height: 750px;
   padding-top: 75px; box-sizing: border-box;
-  background-color: #888;
+  background-color: #FFBD5520;
 }
 /* ________________________갤러리 타이틀 */
-.area_title {
-  
-}
+
 /* _________________________갤러리 컨텐츠 */
 #galleryBox>.area_content {
   position: relative;
   width: 940px; height: 420px;
   margin: 48px auto 0;
-  background-color: #ccc;
+  /* background-color: #ccc; */
 }
+
 .gallery_img {
   float: left; 
   width: 540px; height: 420px;
-  background-color: cyan;
+  /* background-color: cyan; */
+}
+.gallery_img_area {
+  width: 100%; height: 100%;
+  background-image: url("../../img/main_page/gallery_main_01.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+
+.gallery_list ul {
+  width: auto; height: 240px;
+  padding-left: 30px;
+  /* background-color: thistle; */
 }
 
 .gallery_list { 
-  position: absolute; bottom: 0; right: 0;
-  float: right;
-  width: 320px; height: 270px;
+  position: absolute; bottom: 20px; right: 0;
+  width: 350px; height: auto;
 }
-.gallery_list .list_content {
+.gallery_list li { 
+  list-style-type: disc;
   width: 100%; height: 55px;
-  margin-left: 0; margin-bottom: 13px;
-  background-color: aqua;
+  margin-left: 0; padding: 0 20px; box-sizing: border-box;
+  list-style-position: inside;
+  font-size: 1.375rem; line-height: 55px;
+  border-bottom: 1px solid #505050;
+  
 }
+
+
 
 
 /* ===============================================================sponsorBox */
 #sponsorBox {
   width: 100%; height: 100px;
   padding-top: 10px; box-sizing: border-box;
-  background-color: #999;
+  background-color: #fff;
 }
 .sponsor_area {
   width: 1260px;
@@ -399,15 +473,43 @@
   float: left;
   width: 140px; height: 80px;
   margin-left: 20px;
-  background-color: cyan;
+  background-color: #fff;
 }
+.sponsor_area li {
+  width: 140px; height: 80px;
+  background-image: url("../../img/main_page/sponsor.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  /* background-size: auto 80px; */
+}
+.sponsor_area li a:focus { 
+  padding: 5px; box-sizing: border-box;
+  border: 5px dotted #FFBD55;
+ }
+
+.sponsor_area li:nth-child(2) { background-position: -160px 0px; }
+.sponsor_area li:nth-child(3) { background-position: -320px 0px; }
+.sponsor_area li:nth-child(4) { background-position: -480px 0px; }
+.sponsor_area li:nth-child(5) { background-position: -640px 0px; }
+.sponsor_area li:nth-child(6) { background-position: -800px 0px; }
+.sponsor_area li:nth-child(7) { background-position: -960px 0px; }
+.sponsor_area li:nth-child(8) { background-position: -1120px 0px; }
+.sponsor_area li:nth-child(9) { background-position: -1280px 0px; }
+.sponsor_area li:nth-child(10) { background-position: -1140px 0px; }
+.sponsor_area li:nth-child(11) { background-position: -1600px 0px; }
+
+
+
+
+
+
 
 /* ===================================================================footBox */
 #footBox {
   position: relative;
   width: 100%; height: 450px;
   padding-top: 68px; box-sizing: border-box;
-  background-color: #ccc;
+  background-color: #171717;
 }
 .info_area {
   height: auto;
@@ -419,7 +521,10 @@
 .info_logo {
   width: 120px; height: 70px;
   margin-bottom: 45px;
-  background-color: #888;
+  background-image: url("../../img/footBox/logo.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  /* background-color: #888; */
 }
 
 /* ____________________________회사 소개 */
