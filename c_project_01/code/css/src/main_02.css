@@ -229,7 +229,7 @@
   background-repeat: no-repeat;
   background-position: -44px -54px;
 }
-.area_indicator li a:focus {
+.area_indicator li a:focus, .area_indicator li a:hover {
   background-image: url("../../img/main_page/indi_btn.png");
   background-position: 0px -54px;
 }
@@ -343,28 +343,29 @@
   background-color: #fff;
 }
 #bestBox>.area {
+  position: relative;
   height: 380px;
-  background-color: #999;
+  /* background-color: #999; */
 }
 /* _____________________________베스트박스 타이틀 */
 .best_area { 
-  position: relative;
-  float: left;
+  position: absolute; top: 0; bottom: 0; left:150px;  
   width: 230px; height: 355px;
-  background-color: coral;
+  margin: auto;
+  /* background-color: coral; */
 }
 .best_area .area_title{
   width: auto; height: auto;
 }
 .best_area p {
   width: auto; height: auto;
-  margin-top: 30px;
+  padding: 30px 2px; box-sizing: border-box;
   font-size: 1rem;
 }
 .best_area .best_btn {
   position: absolute; bottom: 60px;
   width: 100%; height: 30px;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 .best_area .best_btn button {
   width: 100px; height: 30px;
@@ -377,11 +378,23 @@
 .best_area .best_btn button:nth-child(2){
   float: left;
 }
+.best_area .best_btn button:hover,
+.best_area .more_btn:hover
+  { background-color: #FFBD55;}
+.best_area .more_btn:hover { font-weight:700; color:#1A5D54}
 .best_area .more_btn {
   position: absolute; bottom: 0;
   width: 100%; height: 50px;
+  border-radius: 7px; color: #fff;
   background-color: #1A5D54;
 }
+.best_area .more_btn a {
+  display: block;
+  width: 100%; height: auto;
+  font-size: 1.375rem; font-weight:700;
+  line-height: 50px; text-align: center;
+}
+
 
 /* _____________________________베스트박스 카드리스트 */
 .best_card_list { 
@@ -395,9 +408,13 @@
   margin-left: 40px;
   width: 240px; height: 380px;
   border: 1px solid #757575;
+  border-radius: 5px;
   box-sizing: border-box;
 }
-
+.best_card_img .best_card_img {
+  width: 120px; height: 110px;
+  background-color: #333;
+}
 
 
 
@@ -524,23 +541,64 @@
   background-image: url("../../img/footBox/logo.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  /* background-color: #888; */
+  background-color: #888;
 }
 
 /* ____________________________회사 소개 */
 .info_company {
   position: absolute; bottom: 70px;
   width: 100%; height: 200px;
-  background-color: #888;
+  background-color: #171717;
 }
 .info_company>.info_area {
   float: left;
   width: 500px; height: 200px;
   background-color: cyan;
 }
+
+
+/* _______________________________sns */
 .area_sns {
   float: right;
-  width: 200px; height: 160px;
+  width: autx; height: 160px;
   margin-top: 40px;
-  background-color: cyan;
+  /* background-color: cyan; */
 }
+.area_sns .sns_icon {
+  width: auto; height: 40px;
+  margin-bottom: 5px; padding:1px 1px; box-sizing: border-box;
+  /* background-color: #aaa; */
+}
+.sns_icon ul { width: 100%; height: 100%;}
+.sns_icon li {
+  float: left;
+  width: 40px; height: 40px;
+  margin-right: 20px;
+  border-radius: 30px;
+  background-image: url("../../img/footBox/sns.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.sns_icon li:nth-child(2) { background-position: -60px 0; }
+.sns_icon li:nth-child(3) { background-position: -120px 0; }
+
+.sns_icon li a:focus {
+  outline: 5px solid #FFBD55; border-radius: 30px;
+}
+
+.sns_content div{
+  width: auto; height: 30px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.sns_content div:last-child {
+  height: 50px;
+}
+.sns_content p {
+  padding-left: 10px; box-sizing: border-box;
+  font-size: 0.75rem; color: #555;
+  line-height: 30px;
+}
+
+
