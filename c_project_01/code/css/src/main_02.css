@@ -13,9 +13,9 @@
 /* =======================================================headBox */
 #headBox {
   position: fixed; top: 0; left: 0; z-index: 1000;
-  width: 100%; height: 100px;
+  width: 100%; height: auto;
   padding: 20px 100px 10px; box-sizing: border-box;
-  background-color: #333;
+  background-color: #fff;
 }
 .area_head {
   width: 100%; max-width: 1440px;
@@ -28,55 +28,78 @@
 #logo {
   float: left;
   width: 120px; height: 70px;
-  background-color: #555;
 }
-h1 { 
-  font-size: 3rem;
-  font-weight: 700;
+#logo > a {
+  /* display: block;
+  width: 100%; height: 100%; */
+  background-image: url("../../img/headBox/osam_logo.png");
+  /* background-repeat: no-repeat;
+  background-position: 50% 50%; */
 }
 /* ____________________________네비바 */
 #navBox {
   float: right;
-  width: 510px; height: auto;
+  width: 540px; height: auto;
 }
 .unb ul, .gnb ul {
   width: 100%; height: auto; box-sizing: border-box;
 }
 
 /* ______________________________네비바 - unb */
-.unb ul { padding: 3px 5px; }
+.unb ul, .gnb ul {
+  width: 100%; height: auto; box-sizing: border-box;
+}
+
 .unb {
   float: right;
   width: 270px; height: 26px;
   margin-bottom: 10px;
 }
+.unb ul { padding: 3px 5px; }
 .unb li {
   float: left;
   width: 50px; height: 20px;
   margin-left: 20px;
-  background-color: aqua;
+}
+.unb li:nth-child(1) { float: right;}
+.unb li:nth-child(2) { margin-left: 0;}
+.unb a {
+  display: block;
+  width: 100%; height: 100%;
+  word-spacing: -3px;
+  text-transform: capitalize; text-align: center;
+  color: #505050; font-size: 0.75rem;
 }
 
-/* ________________________________네비바 - gnb */
-.gnb ul { padding: 4px 5px; }
+/* ________________________________네비바 - gnb(링크 블럭 크기 가변성) */
 .gnb {
   float: right;
-  width: 510px; height: 34px;
+  width: auto; min-width: 510px; height: 34px;
 }
+.gnb ul { float: right; width: auto; padding: 4px 5px; }
 .gnb li {
   float: left;
-  margin-left: 16px;
-  width: 70px; height: 25px;
-  background-color: aqua;
+  width: auto; height: 25px;
+  /* margin-left: 14px; */
+  padding: 0 7px; border-right: 1px solid #aaa;
+  text-align: center;
 }
-
+.gnb li:last-child { border: 0; padding-right: 0;}
+.gnb li:first-child { padding-left: 0;}
+.gnb li a {
+  padding: 5px 10px;
+  line-height: 25px;
+  font-size: 1rem; color: #171717;
+  font-weight: 700;
+  text-transform: capitalize;
+}
 
 
 /* =========================================================slideBox */
 #slideBox {
   position: relative;
   width: 100%; height: 600px;
-  padding-top: 100px; box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #444;
 }
 /* _________________________슬라이드 버튼 */
@@ -86,16 +109,48 @@ h1 {
 }
 .slide_btn button {
   width: 60px; height: 40px;
-  background-color: cyan;
+  background-image: url("../../img/main_page/indi_btn.png");
+  background-repeat: no-repeat;
 }
-.slide_btn .next { float: right;}
-.slide_btn .prev { float: left;}
+.slide_btn button:hover { background-color: teal;}
+.slide_btn button:focus { outline: 2px solid #333;}
+
+.slide_btn .next { float: right; background-position: -76px -2px;}
+.slide_btn .prev { float: left; background-position: -2px -2px;}
 
 /* __________________________슬라이드 */
-#adCon {
+.slide_area {
+  width: 100%; height: 100%;
+  padding-top: 100px;
+  background-image: url("../../img/main_page/slideBox/slide_01_bg.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.slide_content {
+  position: relative;
   width: 780px; height: 400px;
   margin: auto;
   background-color: #666;
+}
+.slide_content_part { 
+  position: absolute; top: 0; bottom: 0; left: 0;
+  width: 300px; height: 264px;
+  margin: auto;
+  background-color: thistle;
+}
+.slide_img_part { 
+  float: right;
+  width: 388px; height: 408px;
+}
+.slide_img_part > div {
+  width: 100%; height: 100%;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+}
+.slide_01 {
+  background-image: url("../../img/main_page/slideBox/slide_01_img.png");
 }
 
 /* ===============================================================newBox */
