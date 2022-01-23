@@ -28,6 +28,7 @@
 
         <nav id="navBox"> 
           <h2 class="blind">page navigation</h2>
+
           <div class="unb">
             <h3 class="blind">사용자 설정 네비게이션</h3>
             <ul class="clearfix">
@@ -36,11 +37,12 @@
               <li><a href="#">sign up</a></li>
               <li><a href="#">site map</a></li>
             </ul>
-          </div>
+          </div> <!--// .unb-->
+
           <div class="gnb">
             <h3 class="blind">페이지 전체 네비게이션</h3>
             <ul class="clearfix">
-              <li><a href="#">abou us</a></li>
+              <li><a href="#">about us</a></li>
               <li><a href="#">menu</a></li>
               <li><a href="#">gift</a></li>
               <li><a href="#">
@@ -49,66 +51,73 @@
               <li><a href="#">event</a></li>
               <li><a href="#">notice</a></li>
             </ul>
-          </div>
-        </nav> <!-- navBar-->
+          </div> <!-- // .gnb-->
+        </nav> <!--// #navBox-->
       </div>
     </header> <!-- // #headBox -->
 
 
     <section id="slideBox">
       <h2 class="blind">주요 광고 영역</h2>
+     
       <div class="slide_btn blind_area">
+        <h3 class="blind">슬라이드 버튼 영역</h3>
         <button type="button" class="next">
           <span>다음내용보기</span>
         </button>
         <button type="button" class="prev">
           <span>이전내용보기</span>
         </button>
-      </div>
+      </div> <!-- // .slide_btn-->
 
      <div class="slide_area">
-      <div id="adCon_01" class="slide_content">
+      <div class="slide_content">
         <div class="slide_content_part">
-          <h3>banner title</h3>
+          <h2>banner title</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit reiciendis magni numquam, cum ab aut!</p>
           <div class="link">
             <a href="#">
               바로가기
               <i class="fas fa-arrow-right"></i>
             </a>
-          </div>
-        </div>
+          </div> <!-- // .link-->
+        </div> <!-- // .slide_content_part-->
 
         <figure class="slide_img_part">
           <figcaption class="blind">슬라이드 부연 제목</figcaption>
           <div class="slide_01">
             <span class="blind">슬라이드 설명에 따른 부연 이미지 설명</span>
           </div>
-        </figure>
+        </figure> <!-- // .slide_img_part -->
 
       </div>
-     </div>
+     </div> <!-- // .slide_area-->
 
     </section> <!--// #slideBox-->
 
 
     <article id="newBox">
-      <h2 class="area_title">최신 상품</h2>
+      <h2 class="blind">최신 상품 영역</h2>
+      <div class="new_box title">
+        <h2>최신 상품</h2>
+      </div>
 
       <div class="area_indicator">
+        <h3 class="blind">최신상품 리스트 영역을 선택하는 버튼</h3>
         <ul class="blind_area first_margin">
-          <li><a href="#"><span>최신 첫번째 내용</span></a></li>
-          <li><a href="#"><span>최신 두번째 내용</span></a></li>
-          <li><a href="#"><span>최신 세번째 내용</span></a></li>
+          <li><a href="#"><span>최신상품 첫번째 영역</span></a></li>
+          <li><a href="#"><span>최신상품 두번째 영역</span></a></li>
+          <li><a href="#"><span>최신상품 세번째 영역</span></a></li>
         </ul>
       </div> <!--// .area_indicator -->
 
       
       <div class="area_content blind_area first_margin">
+        <h3 class="blind">최신 상품을 보여주는 영역</h3>
         <ul>
-          <li><a href="#"><span>card-01</span></a></li>
-          <li><a href="#"><span>card-02</span></a></li>
-          <li><a href="#"><span>card-03</span></a></li>
+          <li><a href="#"><span>최신 상품 첫번째</span></a></li>
+          <li><a href="#"><span>최신 상품 두번째</span></a></li>
+          <li><a href="#"><span>최신 상품 세번째</span></a></li>
         </ul>
       </div> <!-- // .area_content -->
 
@@ -116,31 +125,42 @@
 
 
     <section id="subBox">
-      <div class="max_width_01 area">
+      <h2 class="blind"> 보조 광고 영역 </h2>
+
+      <div class="max_width_01 sub_box_area">
+        <!-- <h3 class="blind">보조 광고의 타이틀 및 설명 영역</h3> -->
         <div class="sub_area">
-          <h2 class="area_title">banner title</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, quaerat!</p>
+          <div class="sub_area_title">
+            <h2>banner title</h2>
+          </div> <!--// .sub_area_title-->
+          <div class="sub_box_deteil">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, quaerat!</p>
+          </div>
           <div class="sub_area_btn">
             <div class="sub_area_Shortcut"><a href="#">바로가기</a></div>
             <div class="sub_area_Shortcut"><a href="#">바로가기</a></div>
-          </div>
+          </div> <!-- // .sub_area_btn-->
         </div> <!-- // .sub_area -->
-
 
         <div class="sub_area_img ">
           <div class="img_area_bg"></div>
           <div class="img_area blind_area"></div>
           <span class="blind">보조 광고 배너</span>
-        </div> <!-- // .sub_area_img -->
-          
-        </div>
+        </div> <!-- // .sub_area_img -->  
+        </div> <!-- // .sub_box_area -->
     </section> <!-- // #subBox -->
 
 
     <article id="bestBox">
-      <div class="max_width_01 area">
+      <h2 class="blind"> 인기상품 영역</h2>
+
+      <div class="max_width_01 best_box_area">
+        <!-- <h3 class="blind">인기 상품 리스트 영역</h3> -->
         <div class="best_area">
-          <h2 class="area_title">인기 상품 list</h2>
+          <div class="best_box_area_title">
+            <h2>인기 상품 list</h2>
+          </div><!-- //.best_box_area_title -->
+
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, tempora. Lorem, ipsum dolor.</p>
 
             <div class="best_btn">
@@ -152,11 +172,9 @@
                 <span class="blind">prev</span>
                 <i class="fas fa-chevron-left"></i>
               </button>
-            </div>
-
+            </div> <!-- // .best_btn-->
             <div class="more_btn"><a href="#">&#43; 더보기</a></div>
         </div> <!-- // .best_area-->
-
 
         <div class="best_card_list">
           <ul>
@@ -197,19 +215,17 @@
             </a>
 
           </ul>
-        </div>
-      </div>
+        </div> <!-- // .best_card_list -->
+      </div> <!-- // .best_box_area -->
     </article> <!-- # bestBox-->
 
 
     <article id="galleryBox">
-      <h2 class="max_width_01 area_title">
-        추천 미리보기
-      </h2>
+      <h2 class="gallery_box title"> 추천 미리보기</h2>
       <div class="max_width_01 area_content">
         <div class="gallery_img">
           <div class="gallery_img_area">
-            <span class="blind"> 갤러리 추천 미리보기</span>
+            <h2 class="blind"> 갤러리 추천 미리보기</h2>
           </div>
         </div>
 
@@ -226,7 +242,7 @@
 
 
     <aside id="sponsorBox">
-      <h2 class="blind">후원사</h2>
+      <h2 class="blind">후원사 목록</h2>
       <div class="max_width_01 sponsor_area first_margin  ">
         <ul class="blind_area">
           <li><a href="#"></a>스폰서</li>
@@ -246,6 +262,7 @@
 
 
     <footer id="footBox">
+      <h2 class="blind">회사 infomation 영역</h2>
       <div class="max_width_01 info_area">
         <h2 class="info_logo blind_area">
           <a href="./main_02.html" title="osam coffee">
