@@ -1,0 +1,12 @@
+.video_01 {
+  width: 100%; height: 300px;
+}
+.video_02 {
+  width: 500px; height: 100%;
+}
+.ex_wrap {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-image: url("../../img/background/matthias-oberholzer-HKBK3sXnxy0-unsplash.jpg");
+}
