@@ -1,0 +1,17 @@
+
+form {
+  width: 40%; height: auto; min-height: 200px;
+  background-color: #fff;
+}
+/* form 은 블럭(block) */
+
+/* fieldset { border: none;} */
+/* form > div { border: 1px solid #555;} */
+
+button {
+  padding: 0.3rem 0.75rem;
+  background-color: #ccc;
+  border: 1px solid #333;
+}
+
+.select_list ol, .select_list ul { float: left;}
