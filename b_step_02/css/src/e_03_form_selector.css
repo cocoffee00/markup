@@ -1,0 +1,25 @@
+
+
+.ex_wrap dl {
+  width: 500px; height: auto;
+  padding: 0.5rem; 
+  background-color: #fff;
+}
+
+.ex_wrap dt { 
+  width: 100%; height:auto;
+  padding: 0.5rem; box-sizing: border-box;
+  background-color: #acf; cursor: pointer;
+}
+.ex_wrap dd { 
+  display: none;
+  width: 100%; height:auto;
+  padding: 0.7rem; box-sizing: border-box;
+  background-color: #fac;
+}
+
+/* .siblings_01  dt:hover + dd { display: block;} */
+/* .siblings_01  dt:hover ~ dd { display: block;} */
+
+.siblings_02  dt:hover + dd { display: block;}
+/* .siblings_02  dt:hover ~ dd { display: block;} */
