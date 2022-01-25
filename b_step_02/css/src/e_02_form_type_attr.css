@@ -1,0 +1,60 @@
+
+.none { display: none;}
+
+form {
+  width: 100%; height: auto;
+  padding: 1rem; box-sizing: border-box;
+  background-color: #fff;
+}
+
+fieldset {
+  margin-bottom: 2rem;
+}
+
+legend {
+  line-height:  130%; padding: 1rem;
+}
+
+fieldset > div {
+  width: 100%; height: auto;
+  margin-bottom: 1rem;
+  padding: 10px; box-sizing: border-box;
+  border-bottom: 1px solid #adf;
+}
+
+.input_text {
+  width: 500px; height: 30px;
+  text-indent: 0.5rem;;
+}
+.input_text::placeholder { color: darksalmon; font-weight: 700;}
+.user_id { font-weight: 700; }
+/* .user_id { 
+  display: inline-block;
+  width: 200px; height: 40px; 
+  background-color: darkseagreen;
+} */
+textarea {
+  width: 500px; height: 100px;
+  resize: both; /* both || vertical || horizontal || none */
+}
+
+.img_btn { height: 20px;}
+
+
+
+/* ___마진,패딩,사이즈 안먹음 */
+select {
+  width: 300px; height: auto;
+  font-size: 1.25rem; color: darkslategray;
+  text-indent: 0.5rem;
+}
+/* option:nth-child(1) { font-size: 0.75rem; background-color: #666; }
+option:nth-child(2) { color: #fff; background-color: #999; } */
+
+button {
+  border:  1px solid #333;
+  padding:  0.2rem 1rem;
+  border-radius: 0.2rem;
+  background-color: #888;
+  cursor: pointer;
+}
