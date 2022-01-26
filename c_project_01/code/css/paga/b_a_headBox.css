@@ -1,0 +1,79 @@
+/* b_a_headBox.css */
+
+
+/* =======================================================headBox */
+#headBox {
+  position: fixed; top: 0; left: 0; z-index: 1000;
+  width: 100%; height: auto;
+  padding: 20px 100px 10px; box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.area_head {
+  width: 100%; max-width: 1440px;
+  margin: auto;
+}
+.area_head::after {
+  content: ""; display: block; width: 100%; height: 0; clear: both;
+}
+/* _____________________________로고 */
+#logo {
+  float: left;
+  width: 120px; height: 70px;
+}
+#logo > a {
+  background-image: url("../../img/headBox/osam_logo.png");
+}
+/* ____________________________네비바 */
+#navBox {
+  float: right;
+  width: 540px; height: auto;
+}
+.unb ul, .gnb ul {
+  width: 100%; height: auto; box-sizing: border-box;
+}
+/* ______________________________네비바 - unb */
+.unb {
+  float: right;
+  width: 270px; height: 26px;
+  margin-bottom: 10px;
+}
+.unb ul { padding: 3px 5px; }
+.unb li {
+  float: left;
+  width: 50px; height: 20px;
+  margin-left: 20px;
+}
+.unb li:nth-child(1) { float: right;}
+.unb li:nth-child(2) { margin-left: 0;}
+.unb a {
+  display: block;
+  width: 100%; height: 100%;
+  word-spacing: -3px;
+  text-transform: capitalize; text-align: center;
+  color: #505050; font-size: 0.75rem;
+}
+
+/* ________________________________네비바 - gnb(링크 블럭 크기 가변성) */
+.gnb {
+  float: right;
+  width: auto; min-width: 510px; height: 34px;
+}
+.gnb ul { float: right; width: auto; padding: 4px 5px; }
+.gnb li {
+  float: left;
+  width: auto; height: 25px;
+  /* margin-left: 14px; */
+  padding: 0 7px; border-right: 1px solid #aaa;
+  text-align: center;
+}
+.gnb li:last-child { border: 0; padding-right: 0;}
+.gnb li:first-child { padding-left: 0;}
+.gnb li a {
+  padding: 5px 10px;
+  line-height: 25px;
+  font-size: 1rem; color: #171717;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.gnb li:nth-child(4) a { word-spacing: -5px;}
