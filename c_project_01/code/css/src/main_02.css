@@ -120,7 +120,7 @@
 /* __________________________슬라이드 bg */
 .slide_area {
   width: 100%; height: 100%;
-  padding-top: 100px;
+  padding-top: 100px; box-sizing: border-box;
   background-image: url("../../img/main_page/slideBox/slide_01_bg.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -250,6 +250,7 @@ h2 {
   position: relative;
   width: 100%; height: 350px;
   background-color: #FFBD55;
+  overflow: hidden;
 }
 #subBox>.sub_box_area {
   position: absolute; top:0; bottom: 0; left: 0; right: 0; margin: auto;
@@ -297,17 +298,15 @@ h2 {
   color: #fff; background-color: #333;
 }
 /* __________________________서브박스 이미지 */
-.sub_area_img .img_area_bg {
-  position: absolute; bottom: -25px; left: 140px;
-  width: 460px; height: 300px;
-  background-color: #EFEFEF;
-}
-.sub_area_img .img_area{
+
+.sub_area_img{
   position: absolute; left: 115px;
   width: 460px; height: 300px;
   background-image: url("../../img/main_page/sub_banner_image.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  background-size: cover;
+  box-shadow: 30px 30px 0  #efefef;
 }
 
 
