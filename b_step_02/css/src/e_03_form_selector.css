@@ -23,3 +23,19 @@
 
 .siblings_02  dt:hover + dd { display: block;}
 /* .siblings_02  dt:hover ~ dd { display: block;} */
+
+/* ================================================= */
+
+.smartphone_select {
+  width: 100%; height: auto;
+  margin-top: 1rem; padding: 0.5rem; box-sizing: border-box;
+  background-color: #fff;
+}
+.smartphone_select > li {
+  width: 300px; height: 30px;
+  padding: 0;
+  line-height: 30px;
+}
+.smartphone_select i {
+  color: #999;
+}
