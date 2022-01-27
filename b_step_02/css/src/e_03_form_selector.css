@@ -36,6 +36,49 @@
   padding: 0;
   line-height: 30px;
 }
+.smartphone_select input {
+  position: absolute;
+  z-index: -1;
+  width: 0; height: 0; overflow: hidden;
+}
+.smartphone_select label {
+  display: inline-block;
+  width: 80%; height: 100%;
+  cursor: pointer;
+}
 .smartphone_select i {
+  margin-right: 0.5rem;
+  font-size: 1.3rem;
   color: #999;
 }
+
+.smartphone_select input:checked + label > i { color: blue;}
+
+/* ============================================================ */
+
+
+.select { width: 100%; margin-bottom: 1rem; border-bottom: 1px solid #333;}
+.select button { margin: 0.3rem;}
+[type] { color: #fff; font-weight: 700; border: 1px solid #555;}
+
+/* button과 []사이에 띄어쓰기하면 자손으로 인식 */
+button[type="submit"] { background-color: #7ac; padding: 0.3rem 1rem;}
+button[type="reset"] { background-color: #aad; padding: 0.3rem 1rem;}
+button[type="button"] { background-color: #fda; padding: 0.3rem 1rem;}
+
+/* ^ = a  a라고 시작하는 단어의 요소를 선택 */
+button[type^="b"] { background-color: #f53; padding: 0.3rem 1rem;}
+/* $ = a  a라고 끝나는 단어의 요소를 선택 */
+button[type$="n"] { background-color: #fda; padding: 0.3rem 5rem;}
+
+
+/* 
+속성 선택자 : []내부에 요소의 속성을 담는 형태
+[속성명] {}
+[속성명="값"] {}
+[속성명^="시작글자"] {}
+[속성명$="마무리글자"] {}
+[속성명*="값 전체에서 포함된 글자"] {}
+
+
+*/
