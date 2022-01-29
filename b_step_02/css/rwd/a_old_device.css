@@ -1,0 +1,33 @@
+
+
+/* 공통부분 + 구형브라우저 지원용(rem,calc등의 단위 사용자제) */
+
+#wrap { 
+  width: 100%; min-width: 960px; 
+  height: auto; 
+  margin: auto;
+  /* background-color: #adf; */
+}
+
+#headBox { 
+  width: 100%; height: 80px; 
+  background-color: #cacaca;
+}
+#viewBox { 
+  width: 100%; height: 500px; 
+  background-color: #FC7676;
+}
+#contentBox {
+  width: 100%; max-width: 1280px; height: 600px;
+  margin: auto;
+  background-color: #BCF88D;
+}
+#supportBox {
+  width: 100%; max-width: 1280px; height: 300px;
+  margin: auto;
+  background-color: #5196FF;
+}
+#footBox {
+  width: 100%; height: 120px;
+  background-color: #cacaca;
+}

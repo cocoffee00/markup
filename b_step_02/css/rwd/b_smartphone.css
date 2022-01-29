@@ -1,0 +1,7 @@
+
+
+/* smartphone---------------------------------------------- */
+@media screen and  (max-width:767px) {
+  /* 기준 디바이스 크기 : 320px */
+  #wrap { background-color: #afa;}
+} /* (max-width:767px) */
