@@ -21,6 +21,9 @@
   height: 43.75rem;
   padding-top: 4.0625rem; padding-bottom: 4.375rem;
 }
+.title {
+  width: 940px;
+}
 
 /* ===============================================================subBox */
 #subBox {

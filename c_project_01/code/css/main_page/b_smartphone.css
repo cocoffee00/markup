@@ -21,6 +21,16 @@
     height: 100vh; min-height: 37.5rem;
     padding-top: 5rem; padding-bottom: 5.625rem;
   }
+  .title {
+    width: 100%; height: auto;
+    font-size: 1.75rem;
+    text-align: center;
+  }
+  .area_content {
+    width: 940px; height: 370px;
+  }
+
+
 
   /* ===============================================================subBox */
   #subBox {

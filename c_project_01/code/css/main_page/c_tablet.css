@@ -21,6 +21,12 @@
   height: 100vh; min-height: 43.75rem;
   padding-top: 3.75rem; padding-bottom: 5.625rem;
 }
+.title {
+  width: 100%; height: auto;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
 
 /* ===============================================================subBox */
 #subBox { height: 37.5rem; }
