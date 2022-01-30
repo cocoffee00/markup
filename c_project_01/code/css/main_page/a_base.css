@@ -1,0 +1,79 @@
+/* main_page / a_base.css */
+
+@media screen {
+  
+  #wrap {
+    width: 100%; min-width: 20rem; 
+    height: auto; min-height: 62.5rem;
+    margin: auto; padding-top: 0;
+  }
+  
+  /* =======================================================headBox */
+  #headBox {
+    position: fixed; top: 0; left: 0; z-index: 1000;
+    width: 100%; 
+    height: auto; 
+    /* padding: 20px 100px 10px; box-sizing: border-box; */
+    background-color: #fff;
+    background-color: var(--primary_01);
+  }
+  #headBox > * {display: none;}
+
+  /* =========================================================slideBox */
+  #slideBox {
+    position: relative;
+    width: 100%; 
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #afd;
+  }
+
+  /* ===============================================================newBox */
+  #newBox {
+    position: relative;
+    width: 100%; 
+    /* padding-top: 62px; */
+    box-sizing: border-box;
+    background-color: #edd;
+  }
+
+  /* ===============================================================subBox */
+  #subBox {
+    position: relative;
+    width: 100%; 
+    box-sizing: border-box;
+    background-color: #FFBD55;
+    /* overflow: hidden; */
+  }
+
+  /* ================================================================bestBox */
+  #bestBox {
+    width: 100%;
+    padding-top: 175px; box-sizing: border-box;
+    background-color: #fff;
+  }
+
+  /* ==============================================================galleryBox */
+  #galleryBox {
+    width: 100%; height: 750px;
+    padding-top: 75px; box-sizing: border-box;
+    background-color: #FFBD5520;
+  }
+
+  /* ===============================================================sponsorBox */
+  #sponsorBox {
+    width: 100%; height: 100px;
+    /* padding-top: 10px;  */
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+
+  /* ===================================================================footBox */
+  #footBox {
+    /* position: relative; */
+    width: 100%; 
+    padding-top: 68px; box-sizing: border-box;
+    background-color: #333;
+  }
+
+}

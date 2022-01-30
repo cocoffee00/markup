@@ -1,0 +1,53 @@
+/* main_page / c_tablet.css */
+
+@media screen and (min-width:600px) and (max-width: 1023px) {
+  /* 기준 디바이스 크기 : 600px */
+  body { background-color: #fee;}
+  /* #wrap {  } */
+
+
+/* =======================================================headBox */
+#headBox { height: 3.125rem; padding: 0.5rem 1.0625rem;}
+#headBox > * {display: none;}
+
+/* =========================================================slideBox */
+#slideBox {
+  min-height: 25rem;
+  padding-top: 3.125rem; 
+}
+
+/* ===============================================================newBox */
+#newBox {
+  height: 100vh; min-height: 43.75rem;
+  padding-top: 3.75rem; padding-bottom: 5.625rem;
+}
+
+/* ===============================================================subBox */
+#subBox { height: 37.5rem; }
+
+/* ================================================================bestBox */
+#bestBox {
+  height: 100vh; min-height: 37.5rem;
+  padding: 3.75rem 3.125rem; padding-bottom: 5.9375rem;
+}
+
+/* ==============================================================galleryBox */
+#galleryBox {
+  height: 61.25rem;
+  padding-top: 7.75rem; padding-bottom: 7.5rem;
+}
+
+/* ===============================================================sponsorBox */
+#sponsorBox { height: 18.75rem; }
+
+/* ===================================================================footBox */
+#footBox {
+  /* position: relative; */
+   height: 26.5625rem;
+}
+
+
+
+
+/* ============================================ */
+} /* @media screen and (min-width:600px) and (max-width: 1023px) */
