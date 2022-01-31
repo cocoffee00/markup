@@ -26,15 +26,20 @@
   <div id="wrap">
     
     <header id="headBox">
-      <div class="area_head">
+      <div class="area_head clearfix">
           <h1 id="logo" class="blind_area">
             <a href="../index.html" title="osam coffee">
-              <span >osam</span>
+              <span>osam</span>
             </a>
           </h1>
+          <div class="nav_btn blind_area">
+            <button type="button">
+              <span>네비게이션 버튼</span>
+            </button>
+          </div>
 
-        <nav id="navBox"> 
-          <h2 class="blind">page navigation</h2>
+        <nav id="navBox" > 
+          <h2 class="blind"><span class="blind">page navigation</span></h2>
 
           <div class="unb">
             <h3 class="blind">사용자 설정 네비게이션</h3>
@@ -116,9 +121,9 @@
         </ul>
       </div> <!--// .area_indicator -->
 
-      <div class="area_content blind_area ">
+      <div class="area_content blind_area newBox_area">
         <h3 class="blind">최신 상품을 보여주는 영역</h3>
-        <ul class="first_margin">
+        <ul class="first_margin" clearfix>
           <li><a href="#"><span>최신 상품 첫번째</span></a></li>
           <li><a href="#"><span>최신 상품 두번째</span></a></li>
           <li><a href="#"><span>최신 상품 세번째</span></a></li>
@@ -127,34 +132,33 @@
     </article> <!--// #newBox -->
 
 
-    <section id="subBox">
+    <section id="subBox" class="none">
       <h2 class="blind"> 보조 광고 영역 </h2>
 
       <div class="max_width_01 sub_box_area">
         <!-- <h3 class="blind">보조 광고의 타이틀 및 설명 영역</h3> -->
-        <div class="sub_area">
-          <div class="sub_area_title">
+        <div class="sub_area ">
+          
             <h2>banner title</h2>
-          </div> <!--// .sub_area_title-->
-          <div class="sub_box_deteil">
+              
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, quaerat!</p>
-          </div>
+         
           <div class="sub_area_btn">
-            <div class="sub_area_Shortcut"><a href="#">바로가기</a></div>
-            <div class="sub_area_Shortcut"><a href="#">바로가기</a></div>
-          </div> <!-- // .sub_area_btn-->
+            <a href="#">바로가기</a>
+            <a href="#">바로가기2</a>
+          </div>
         </div> <!-- // .sub_area -->
 
         
           <div class="sub_area_img blind_area">
             <span class="blind">보조 광고 배너</span>
           </div>
-          
+          </div>
         
     </section> <!-- // #subBox -->
 
 
-    <article id="bestBox">
+    <article id="bestBox" class="none">
       <h2 class="blind"> 인기상품 영역</h2>
 
       <div class="max_width_01 best_box_area">
@@ -223,7 +227,7 @@
     </article> <!-- # bestBox-->
 
 
-    <article id="galleryBox">
+    <article id="galleryBox" class="none">
       <h2 class="blind"> 추천 미리보기 영역</h2>
       
       <div class="max_width_01 gallery_area title">
@@ -246,7 +250,7 @@
     </article> <!-- // #galleryBox-->
 
 
-    <aside id="sponsorBox">
+    <aside id="sponsorBox" class="none">
       <h2 class="blind">후원사 목록</h2>
       <div class="max_width_01 sponsor_area">
         <ul class="blind_area">
@@ -266,7 +270,7 @@
     </aside> <!-- // #asidBox-->
 
 
-    <footer id="footBox">    
+    <footer id="footBox" class="none">    
       <div class="max_width_01 foot_box_area">
         <h2 class="info_logo"> <span class="blind">오삼커피 회사 정보</span></h2>
           <div class="info_company clearfix"> 
