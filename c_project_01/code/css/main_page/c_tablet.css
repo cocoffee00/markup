@@ -2,19 +2,17 @@
 
 @media screen and (min-width:600px) and (max-width: 1023px) {
   /* 기준 디바이스 크기 : 600px */
-  body { background-color: #fee;}
-  /* #wrap {  } */
 
 
 /* =======================================================headBox */
+
 #headBox { height: 3.125rem; padding: 0.5rem 1.0625rem;}
-.area_head {height: 100%;}
-#logo {  width: 60px; height: 100%; }
+.area_head { height: 100%;}
+#logo { width: 60px; height: 100%; }
 .nav_btn { 
   display: block; float: right;
   width: 35px; height: 35px; 
 }
-
 #navBox {
   display: none;
   position: absolute; top: 0; left: 0; z-index: 10;
@@ -83,8 +81,8 @@
 
 /* =========================================================slideBox */
 #slideBox {
-  min-height: 25rem;
-  padding-top: 3.125rem; 
+  min-height: 400px;
+  padding-top: 50px; 
 }
 
 /* ===============================================================newBox */
