@@ -11,13 +11,87 @@
   /* =======================================================headBox */
   #headBox {
     position: fixed; top: 0; left: 0; z-index: 1000;
-    width: 100%; 
-    height: auto; 
-    /* padding: 20px 100px 10px; box-sizing: border-box; */
+    width: 100%; height: auto; 
+    box-sizing: border-box;
     background-color: #fff;
-    background-color: var(--primary_01);
+    background-color: var(--white);
   }
-  #headBox > * {display: none;}
+  .area_head {
+    width: 100%; max-width: 1440px;
+    height: auto; 
+    margin: auto;
+  }
+  #logo { float: left; }
+  #logo > a {
+    background-image: url("../../img/headBox/osam_logo.png");
+    background-size: contain;
+  }
+  .nav_btn { display: none;}
+  .nav_btn > button {
+    width: 100%; height: 100%;
+    background-image: url("../../img/headBox/navBox/menu_btn.png");
+    background-image: url("../../img/headBox/navBox/menu_btn.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+
+  #navBox {
+    float: right;
+    width: 540px; height: auto;
+  }
+  .unb ul, .gnb ul {
+    width: 100%; height: auto; box-sizing: border-box;
+  }
+  /* ______________________________네비바 - unb */
+  .unb {
+    float: right;
+    width: 270px; height: 26px;
+    margin-bottom: 10px;
+  }
+  .unb ul { padding: 3px 5px; }
+  .unb li {
+    float: left;
+    width: 50px; height: 20px;
+    margin-left: 20px;
+  }
+  .unb li:nth-child(1) { float: right;}
+  .unb li:nth-child(2) { margin-left: 0;}
+  .unb a {
+    display: block;
+    width: 100%; height: 100%;
+    word-spacing: -3px;
+    text-transform: capitalize; text-align: center;
+    color: #505050; font-size: 0.75rem;
+  }
+  
+  /* ________________________________네비바 - gnb(링크 블럭 크기 가변성) */
+  .gnb {
+    float: right;
+    width: auto; min-width: 510px; height: 34px;
+  }
+  .gnb ul { float: right; width: auto; padding: 4px 5px; }
+  .gnb li {
+    float: left;
+    width: auto; height: 25px;
+    /* margin-left: 14px; */
+    padding: 0 7px; border-right: 1px solid #aaa;
+    text-align: center;
+  }
+  /* .gnb li:last-child { border: 0; padding-right: 0;} */
+  /* .gnb li:first-child { padding-left: 0;} */
+  .gnb a {
+    padding: 5px 10px;
+    line-height: 25px;
+    font-size: 1rem; color: #171717;
+    font-weight: 700;
+    text-transform: capitalize;
+    word-spacing: -5px;
+  }
+ 
+
+
+
 
   /* =========================================================slideBox */
   #slideBox {
@@ -34,19 +108,59 @@
     width: 100%; 
     /* padding-top: 62px; */
     box-sizing: border-box;
-    background-color: #edd;
+    overflow-x: hidden;
   }
   .title {
-    width: 100%; height: 70px;
-    margin: auto;  padding-top: 10px; box-sizing: border-box;
+    width: 100%; height: 4.375rem;
+    margin: auto;  padding-top: 0.625rem; box-sizing: border-box;
     font-size: 2.5rem;
-    background-color: #aaa;
   }
-  .area_content {
-    width: 940px; height: 370px;
-    margin: 48px auto 0;
-    background-color: #777;
+  .area_indicator {
+    position: absolute; bottom: 4.375rem; left: 0; right: 0;
+    width: 8.75rem; height: 1.875rem;
+    margin: auto;
   }
+  .area_indicator ul { width: 100%; height: 100%;}
+  .area_indicator li {
+    float: left;
+    width: 1.875rem; height: 1.875rem;
+    margin-left: 1.5625rem;
+  }
+  .area_indicator li a {
+    border-radius: 100%;
+    background-color: #c4c4c4;
+    box-sizing: border-box;
+    /* width: 30px; height: 30px; */
+    /* background-image: url("../../img/main_page/indi_btn.png");
+    background-repeat: no-repeat;
+    background-position: -46px -56px; */
+  }
+  .area_indicator li.act a { background-color: #1A5D54;}
+  .area_indicator li a:focus { border:  0.125rem solid rgba(23, 23, 23, 1); outline: 0;}
+  .area_indicator li a:hover { background-color: rgba(85, 85, 85, 0.3);}
+
+  .newBox_area {
+    width: 58.75rem; height: 23.125rem;
+    overflow: hidden;
+    margin: 0; margin-top: 3rem;
+    position: relative; left: 50%; transform: translateX(-50%);
+  }
+  
+  .newBox_area ul { width: 200%; height: auto;}
+  .newBox_area li {
+    float: left;
+    width: 18.75rem; height: 23.125rem;
+    margin-left: 1.25rem;
+  }
+  .newBox_area li:nth-child(1) a { background-image: url("../../img/main_page/new_product_01.png"); }
+  .newBox_area li:nth-child(2) a {  background-image: url("../../img/main_page/new_product_02.png"); }
+  .newBox_area li:nth-child(3) a {  background-image: url("../../img/main_page/new_product_03.png");}
+  /* .newBox_area li a:focus { outline: 0.75rem solid #FFBD55;} */
+
+
+
+
+
 
   /* ===============================================================subBox */
   #subBox {
@@ -56,6 +170,60 @@
     background-color: #FFBD55;
     /* overflow: hidden; */
   }
+  #subBox>.sub_box_area {
+    position: absolute; bottom: 0; left: 0; right: 0; 
+    height: 18.75rem;
+    margin: auto;
+  }
+  .sub_area {
+    position: absolute; bottom:50px;
+    height: auto;
+  }
+
+  
+  .sub_area h2 {
+    width: 100%; height: 60px;
+    margin-bottom: 15px;
+    font-size: 2.5rem; color: #333;
+    line-height: 60px;
+    text-transform: capitalize;
+  }
+  .sub_area p {
+    width: 100%; height: auto;
+    margin-bottom: 25px;
+    font-size: 18px;
+    color: #505050;
+  }
+  .sub_area_btn { width: 100%; height: 45px; }
+  .sub_area_btn a{
+    float: left;
+    height: 100%;
+    border-radius: 8px; 
+    font-size: 22px; text-align: center; line-height: 45px;
+   }
+  .sub_area_btn a:nth-child(1) {
+    width: 160px; margin-right: 30px; 
+    color: #fff;
+    background-color: #1A5D54;
+  }
+  .sub_area_btn a:nth-child(2) {
+    width: 110px;  
+    color: #1A5D54;
+    background-color: #fff;
+  }
+
+
+
+
+  .sub_area_img{
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  
+
+
+
 
   /* ================================================================bestBox */
   #bestBox {

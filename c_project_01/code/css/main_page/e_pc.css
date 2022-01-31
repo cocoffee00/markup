@@ -9,9 +9,12 @@
 /* =======================================================headBox */
 #headBox { 
   height: 6.25rem; 
-  padding-top: 1.25rem; padding-bottom: 0.625rem;
+  padding: 1.25rem; padding-bottom: 0.625rem;
 }
-#headBox > * {display: none;}
+#logo { width: 120px; height: 70px; }
+
+
+
 
 /* =========================================================slideBox */
 #slideBox {
@@ -25,12 +28,23 @@
   padding-top: 4.0625rem; padding-bottom: 4.375rem;
 }
 .title {
-  width: 940px;
+  width: 58.75rem;
 }
 
 
 /* ===============================================================subBox */
 #subBox { height: 21.875rem; }
+.sub_area { right: 70px; width: 400px; }
+.sub_area_img{
+  float: left;
+  width: 28.75rem; height: 18.75rem;
+  transform: translateY(-1.5625rem);
+  background-image: url("../../img/main_page_re/desktop/e_subBox/sub_img.png");
+  box-shadow: 1.875rem 1.875rem 0  #efefef;
+}
+
+
+
 
 /* ================================================================bestBox */
 #bestBox {

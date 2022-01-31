@@ -8,7 +8,95 @@
   
   /* =======================================================headBox */
   #headBox { height: 3.125rem; padding: 0.5rem 0.625rem;}
-  #headBox > * {display: none;}
+  .area_head {height: 100%;}
+  #logo { 
+    float: none;
+    position: absolute; top: 8px; left: 50%;
+    width: 60px; height: 35px;
+    transform: translateX(-50%);
+  }
+  .nav_btn { 
+    display: block;
+    position: relative; z-index: 100;
+    width: 35px; height: 35px; 
+  }
+
+  #navBox {
+    display: none;
+    position: absolute; top: 0; left: 0; z-index: 10;
+    width: 100%; height: 100vh;
+    padding: 8px 30px; box-sizing: border-box;
+    background-image: url("../../img/headBox/navBox/smartophone_nav_origin.png");
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #navBox::before { 
+    content: ""; 
+    display: block; z-index: -1;
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%; 
+    background-color: var(--primary_01);
+    opacity: 0.85;
+  }
+
+  #navBox h2 {
+    position: relative; z-index: 100;
+    width: 60px; height: 35px;
+    margin: auto; margin-bottom: 30px;
+    background-image: url("../../img/headBox/navBox/logo_white.png");
+    background-image: url("../../img/headBox/navBox/logo_white.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+  .unb, .gnb { 
+    float: none; 
+    width: 100%; min-width: auto;
+    height: auto; 
+  }
+  .unb { 
+    width: 80%;
+    margin: auto; margin-bottom: 16px;
+    border-bottom: 1px solid #fff;
+  }
+  .unb li {
+    float: left;
+    width: calc(50% - 10px); height: auto;
+    margin: 0; margin-bottom: 10px;
+  }
+  .unb li:nth-child(1) { float: left;}
+  .unb li:nth-child(2n) { float: right;}
+  .unb a { 
+    height: 30px; 
+    line-height: 30px; font-size: 1rem;
+    padding: 0;  color: #fff;}
+
+
+  .gnb ul { float: none; width: 100%; height: auto;}
+  .gnb li { 
+    float: none; 
+    width: 100%; height: 50px;
+    padding:0; margin-bottom: 15px;
+  }
+  .gnb a { 
+    display: block; 
+    width: 100%; height: 100%;  
+    padding: 0;  color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    line-height: 50px;
+    font-size: 18px; font-weight: 400;
+  }
+
+  
+
+
+
+
+
+
+
 
   /* =========================================================slideBox */
   #slideBox {
@@ -18,7 +106,7 @@
 
   /* ===============================================================newBox */
   #newBox {
-    height: 100vh; min-height: 37.5rem;
+    height: 100vh; min-height: 34.375rem; max-height: 37.5rem;
     padding-top: 5rem; padding-bottom: 5.625rem;
   }
   .title {
@@ -26,15 +114,44 @@
     font-size: 1.75rem;
     text-align: center;
   }
-  .area_content {
-    width: 940px; height: 370px;
+  
+  .newBox_area {
+    width: 814px; height: 320px;
+    margin-top: 52px;
   }
+  .newBox_area li {
+    width: 260px; margin-left: 17px;
+   }
 
 
 
   /* ===============================================================subBox */
   #subBox {
-    height: 100vh; min-height: 31.25rem;
+    height: 100vh; min-height: 31.25rem; background-color: #fff;
+  }
+  #subBox>.sub_box_area {
+    width: 100%; min-width: auto; height: 100%;
+  }
+  .sub_area {
+    z-index: 100;
+    left: 50%; bottom: 20%;
+    width: 90%;
+    transform: translateX(-50%);
+  }
+  .sub_area p { min-height: 80px; margin-bottom: 35px;}
+  .sub_area_btn { height: auto; }
+  .sub_area_btn a { display: block; float: none; margin-bottom: 14px; }
+  .sub_area_btn a:nth-child(1) { 
+    width: 100%; height: 60px; 
+    line-height: 60px;
+  font-weight: 700;}
+  .sub_area_btn a:nth-child(2) { width: 100%; height: 45px;}
+
+
+  .sub_area_img{
+    width: 100%; height: 100%;
+    background-image: url("../../img/main_page_re/mobile/e_subBox/sub_img.png");
+    opacity: 0.3;
   }
 
   /* ================================================================bestBox */
@@ -47,6 +164,9 @@
   #galleryBox {
     height: auto; min-height: 61.25rem;
     padding-top: 1.5rem;padding-bottom: 8.75rem;
+  }
+  #galleryBox .area_content {
+    width: 100px;
   }
 
   /* ===============================================================sponsorBox */

@@ -8,7 +8,78 @@
 
 /* =======================================================headBox */
 #headBox { height: 3.125rem; padding: 0.5rem 1.0625rem;}
-#headBox > * {display: none;}
+.area_head {height: 100%;}
+#logo {  width: 60px; height: 100%; }
+.nav_btn { 
+  display: block; float: right;
+  width: 35px; height: 35px; 
+}
+
+#navBox {
+  display: none;
+  position: absolute; top: 0; left: 0; z-index: 10;
+  width: 100%; height: 100vh;
+  padding: 8px 80px; box-sizing: border-box;
+  background-image: url("../../img/headBox/navBox/smartophone_nav_origin.png");
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#navBox::before { 
+  content: ""; 
+  display: block; z-index: -1;
+  position: absolute; top: 0; left: 0;
+  width: 100%; height: 100%; 
+  /* background-color: var(--primary_02); */
+  background-image: linear-gradient(rgba(131, 76, 51, 1) 50%, transparent);
+  opacity: 0.9;
+}
+
+.nav_btn { 
+  display: block;
+  position: relative; z-index: 100;
+  width: 35px; height: 35px; 
+}
+#navBox h2 {
+  position: relative; z-index: 100;
+  width: 60px; height: 35px;
+  margin-bottom: 30px;
+  background-image: url("../../img/headBox/navBox/logo_white.png");
+  background-image: url("../../img/headBox/navBox/logo_white.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.unb, .gnb { float: none; width: 100%; min-width: auto; height: auto;}
+.unb { margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid #fff; }
+.unb li {
+  float: left;
+  width: calc(100% / 4); height: 20px;
+  margin: 0; 
+  padding: 0 5px; box-sizing: border-box;
+}
+.unb a { font-size: 1rem; color: #fff;} 
+
+.gnb ul { float: none; width: 100%; height: auto;}
+.gnb li { 
+  width: 32%; height: 60px;
+  margin-right: 2%; margin-bottom: 20px;
+  padding:0; 
+  border: 0;
+}
+.gnb li:nth-child(3n) { margin-right: 0;}
+
+.gnb a { 
+  display: block;
+  width: 100%; height: 100%;
+  padding: 0; border: 1px solid #fff;
+  border-radius: 5px;
+  line-height: 60px;
+  color: #fff;
+  font-size: 18px; font-weight: 400;
+}
+
 
 /* =========================================================slideBox */
 #slideBox {
@@ -18,7 +89,7 @@
 
 /* ===============================================================newBox */
 #newBox {
-  height: 100vh; min-height: 43.75rem;
+  height: 100vh; min-height:34.375rem; max-height: 37.5rem;
   padding-top: 3.75rem; padding-bottom: 5.625rem;
 }
 .title {
@@ -26,10 +97,34 @@
   font-size: 1.75rem;
   text-align: center;
 }
+.area_indicator { bottom: 70px;}
+.newBox_area {
+  width: 814px; height: 320px;
+}
+.newBox_area li {
+  width: 260px; margin-left: 17px;
+ }
+
+
 
 
 /* ===============================================================subBox */
-#subBox { height: 37.5rem; }
+#subBox { height: 37.5rem; background-color: #fff;}
+#subBox>.sub_box_area {
+  width: 100%; min-width: auto; height: 100%;
+}
+.sub_area {
+  z-index: 100;
+  left: 50%; bottom: 15%;
+  width: 500px;
+  transform: translateX(-50%);
+}
+.sub_area_btn a:nth-child(1) { width: 250px; }
+.sub_area_img{
+  width: 100%; height: 100%;
+  background-image: url("../../img/main_page_re/mobile/e_subBox/sub_img.png");
+  opacity: 0.3;
+}
 
 /* ================================================================bestBox */
 #bestBox {
@@ -41,6 +136,9 @@
 #galleryBox {
   height: 61.25rem;
   padding-top: 7.75rem; padding-bottom: 7.5rem;
+}
+#galleryBox .area_content {
+  width: 100px;
 }
 
 /* ===============================================================sponsorBox */
