@@ -2,23 +2,20 @@
 
 @media screen and (min-width:1440px) {
   /* 기준 디바이스 크기 : 1440px */
-  body { background-color: #eef;}
-  /* #wrap {  } */
-
   
 /* =======================================================headBox */
 #headBox { 
   height: 6.25rem; 
   padding: 1.25rem; padding-bottom: 0.625rem;
 }
-#logo { width: 120px; height: 70px; }
+#logo { width: 7.5rem; height: 4.375rem; }
 
 
 
 
 /* =========================================================slideBox */
 #slideBox {
-  min-height: 600px; 
+  min-height: 37.5rem; 
   padding-top: 6.25rem; 
 }
 
@@ -35,13 +32,6 @@
 /* ===============================================================subBox */
 #subBox { height: 21.875rem; }
 .sub_area { right: 70px; width: 400px; }
-.sub_area_img{
-  float: left;
-  width: 28.75rem; height: 18.75rem;
-  transform: translateY(-1.5625rem);
-  background-image: url("../../img/main_page_re/desktop/e_subBox/sub_img.png");
-  box-shadow: 1.875rem 1.875rem 0  #efefef;
-}
 
 
 
@@ -51,12 +41,15 @@
   height: 43.75rem;
   padding-top: 10.9375rem; padding-bottom: 9.0625rem;
 }
+.best_card_list a:last-child { display: none;}
 
 /* ==============================================================galleryBox */
 #galleryBox {
   height: 46.875rem;
   padding-top: 5rem; padding-bottom: 8.125rem;
 }
+
+.gallery_content {display: none;}
 
 /* ===============================================================sponsorBox */
 #sponsorBox { height: 6.25rem; }
