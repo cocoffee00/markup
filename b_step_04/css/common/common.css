@@ -22,9 +22,9 @@
 /* -_____코드 예제 세팅________________________________ */
 
 .code_exam {
-  width: 1200px; height: auto; min-height: 1000px;
+  width: 80%; height: auto; min-height: 1000px;
   margin: auto; padding: 20px; box-sizing: border-box;
-  background-color: #eee;
+  /* background-color: #eee; */
 }
 
 .code_exam h1 {
@@ -35,7 +35,7 @@
 }
 
 .code_exam .part {
-  width: 90%; height: auto;
+  width: 80%; height: auto;
   margin: 20px auto 0; padding: 20px; 
   border: 1px solid #555;
   box-sizing: border-box;
