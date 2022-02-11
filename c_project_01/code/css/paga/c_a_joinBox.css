@@ -1,0 +1,125 @@
+
+/* joinBox.css */
+
+#wrap {
+  height: 1456px;
+  background-image: url("../../img/login_page/login_bg.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+#joinBox {
+  width: 1100px; height: 1000px;
+  margin: auto;
+  margin-top: 200px; margin-bottom: 250px;
+  background-color: #fff;
+}
+.intro_part {
+  width: 100%; height: auto;
+}
+.intro_inner {
+  float: left;
+  width: 500px; height: 1000px;
+  padding-top: 174px; box-sizing: border-box;
+  background-color: #fff;
+  background-image: url("../../img/main_page_re/mobile/e_subBox/sub_img.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.j_inner_content {
+  width: 100%; height: 270px;
+  padding-right: 60px; padding-left: 90px; box-sizing: border-box;
+  text-align: right;
+}
+.company_logo {
+  display: inline-block;
+  width: 120px; height: 70px;
+  margin-bottom: 48px;
+  background-image: url("../../img/headBox/osam_logo.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+.j_inner_content h2 {
+  width: auto; height: auto;
+  font-size: 40px; font-weight: 700;
+  text-transform: capitalize;
+}
+.j_inner_content p {
+  margin-top: 25px;
+}
+
+
+
+legend {
+  display: none;
+  position: absolute; z-index: -1;
+  overflow: hidden;
+  width: 0; height: 0;
+}
+
+
+.join_form {
+  float: right;
+  width: 600px; height: 1000px;
+}
+form {
+  width: 463px; height: 750px;
+  margin: auto; margin-top: 190px;
+}
+fieldset { margin: 0; padding: 0; border: 0;}
+
+fieldset:nth-child(1) {
+  width: 464px; height: 534px;
+  margin-bottom: 156px;
+}
+fieldset:nth-child(2) {
+  width: 464px; height: 60px;
+  text-align: center;
+}
+.user_input label {float: left; margin-right: 30px;}
+.user_input {
+  width: 100%; height: 50px;
+  margin-bottom: 30px;
+  padding-bottom: 10px; box-sizing: border-box;
+  border-bottom: 2px solid #1a5d54;
+}
+.user_input input {
+  /* float: left; */
+  width: 300px; height: 100%;
+  border: 0; padding: 0;
+}
+fieldset .user_input:nth-of-type(1), .user_input:nth-of-type(4) {
+  margin-bottom: 70px;
+}
+.icon {
+  display: block;
+  width: 40px; height: 40px;
+  background-color: #1a5d54;
+}
+
+
+
+
+
+.btn_next, .btn_prev { display: inline; width: 100%; height: 100%;}
+
+input[type="submit"] {
+  width: 300px; height: 100%;
+  border-radius: 8px; border: 0;
+  color: #fff; font-size: 1.375rem; font-weight: 700; 
+  background-color : #1a5d54;
+  cursor: pointer;
+}
+.btn_next input[type="submit"] {
+  float: right;
+}
+.btn_prev input[type="submit"] {
+  width: 150px; 
+  color: #333;
+  border:  1px solid #555;
+  background-color : #fff;
+}
+
