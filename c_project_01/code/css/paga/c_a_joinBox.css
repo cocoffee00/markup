@@ -97,9 +97,13 @@ fieldset .user_input:nth-of-type(1), .user_input:nth-of-type(4) {
 .icon {
   display: block;
   width: 40px; height: 40px;
-  background-color: #1a5d54;
 }
-
+label[for="userName"], label[for="userMail"], label[for="userBirth"] {
+  background-image: url("../../img/login_page/mail.png");
+}
+label[for="userPw"],label[for="userPw2"], label[for="userPhone"] {
+  background-image: url("../../img/login_page/key.png");
+}
 
 
 
