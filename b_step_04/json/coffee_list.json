@@ -1,0 +1,37 @@
+[
+  {
+    "image" : "이미지 데이터",
+    "image_alt" : "이미지에 대한 설명",
+    "title" : "title_01",
+    "content" : "내용을 간단하게 작성",
+    "link" : "./data_detail/coffe_americano.html"
+  },
+  {
+    "image" : "이미지 데이터",
+    "image_alt" : "이미지에 대한 설명",
+    "title" : "title_02",
+    "content" : "내용을 간단하게 작성",
+    "link" : "./data_detail/coffe_latte.html"
+  },
+  {
+    "image" : "이미지 데이터",
+    "image_alt" : "이미지에 대한 설명",
+    "title" : "title_03",
+    "content" : "내용을 간단하게 작성",
+    "link" : "./data_detail/coffe_mocha.html"
+  },
+  {
+    "image" : "이미지 데이터",
+    "image_alt" : "이미지에 대한 설명",
+    "title" : "title_04",
+    "content" : "내용을 간단하게 작성",
+    "link" : "./data_detail/coffe_shot.html"
+  },
+  {
+    "image" : "이미지 데이터",
+    "image_alt" : "이미지에 대한 설명",
+    "title" : "title_05",
+    "content" : "내용을 간단하게 작성",
+    "link" : "./data_detail/coffe_coldbrew.html"
+  }
+]
