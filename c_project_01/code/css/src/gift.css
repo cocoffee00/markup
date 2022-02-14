@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+/* gift.css */
+
+@import url("../paga/a_wrap.css");
+@import url("../paga/b_a_headBox.css");
+@import url("../paga/f_a_giftBox.css");
+@import url("../paga/b_b_footBox.css");
