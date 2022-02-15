@@ -1,0 +1,103 @@
+/* b_11_tab_menu.css */
+
+
+.tab_area {
+  width: 100%; height: auto;
+}
+.tab_title {
+  width: 100%; height: 30px;
+  margin-bottom: 50px;
+}
+.tab_title ul {
+  width: 100%; height: 100%;
+  border-bottom: 1px solid #222;
+}
+.tab_title li {
+  float: left;
+  width: 20%; height: 100%;
+  padding: 0 0.4rem; box-sizing: border-box;
+}
+.tab_title li button {
+  width: 100%; height: 100%;
+}
+.tab_title li.on button {
+  background-color: #ccc;
+  font-size: 1.1rem; font-weight: 700;
+}
+.tab_content {
+  width: 100%; height: auto; 
+  padding: 0.5rem 1rem; box-sizing: border-box;
+  padding-bottom: 7rem;
+}
+.tab_content li {
+  position: relative;
+  float: left;
+  width: 13.5rem; height: 16rem;
+  margin: 0.3rem;
+  border: 1px solid#777;
+  padding: 0.5rem; box-sizing: border-box;
+  border-radius: 0.2rem;
+}
+.tab_list {
+  width: 100%; height: auto; min-height: 31.25rem;
+  /* background-color: #eee; */
+}
+.tab_list li:hover {
+  transform: translate(-0.1rem, -0.1rem);
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
+}
+
+.img_con {
+  width: 100%; height: 100px;
+  margin-bottom: 0.5rem;
+  background-color: #fff;
+  border-radius: 0.2rem;
+}
+
+.tab_list dl {  width: 100%; height: auto;}
+
+
+.tab_list dt {
+  width: 100%; height: auto;
+  font-size: 1.2rem; font-weight: 700;
+  text-transform: capitalize;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid #333;
+  margin-bottom: 0.4rem;
+}
+
+.img_con {
+  width: 100%; height: 8rem;
+  background-color: #eee;
+  margin-bottom: 0.5rem;border-radius: 0.2rem;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.text_con {
+  width: 100%; height: auto;
+  margin-bottom: 0.2rem;
+  font-size: 12px;
+}
+
+.link_con {
+  position: absolute;
+  bottom: 0.3rem; 
+  left: 50%; transform: translateX(-50%);
+  width: 95%; height: 30px;
+  margin: auto;
+  background-color:  #079;
+}
+
+.link_con a {
+  display: block;
+  width: 100%; height: 100%;
+  text-align: center; line-height: 30px;
+  color: #fff;
+}
+.link_con a:hover {
+  transform: translate(-0.1rem, -0.1rem);
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
+}
+}
