@@ -1,0 +1,90 @@
+/* b_01_slide_structor.css */
+
+.code_exam { width: 1300px; }
+.code_exam .ex_wrap { position: relative; padding-bottom: 0;}
+h3 { text-align: center; font-weight: 700; margin-bottom: 20px;}
+/* ___________________________________________________________________ */
+.slide {
+  overflow: hidden;
+  width: 800px; height: 450px;
+  margin: auto; 
+  background-color: #fff;
+}
+.horizontal_slide { width: 500%; height: 100%; }
+.horizontal_slide > div { float: left; width: 800px; height: 450px; }
+
+/* ______________________________________________________________________ */
+.position_slide { position: relative; width: 100%; height: 100%;}
+.position_slide > div { 
+  display: none;
+  position: absolute; top: 0; left: 0;
+  width: 100%; height: 450px;
+}
+.position_slide > div.action { display: block; z-index: 100;}
+
+/* _________________________________________________________________ */
+
+.slide_btn { 
+  position: absolute; top: 50%; left: 0;
+  width: 100%; height: 0; 
+  padding: 0 30px; box-sizing: border-box;
+  font-size: 12px;
+}
+.slide_btn button {
+  width: 40px; height: 40px; background-color: #ccc; border-radius: 10px;
+}
+.next { float: right; }
+.prev { float: left; }
+
+/* ___________________________________________________________________ */
+
+.indicator {
+  position: absolute; z-index: 200; bottom: 15px; left: 0;
+  width: 100%; height: 0; 
+  text-align: center;
+  background-color: #aff;
+}
+.indicator ul { 
+  display: inline-block; 
+  width: auto; height: 30px; 
+  padding: 5px;
+  border-radius: 50px;
+  background-color: #fff;
+  transform: translateY(-80%);
+}
+.indicator li { 
+  display: inline-block; 
+  width: 30px; height: 30px; 
+  margin-right: 30px; padding: 0;
+  border-bottom: 0;
+}
+.indicator li:last-child { margin-right: 0;}
+.indicator li a { 
+  display: block; 
+  width: 100%; height: 100%;
+  border-radius: 50px;
+  background-color: #fa7;
+}
+.indicator li.action { width: 50px;}
+.indicator li.action a { background-color: #07a;}
+
+
+
+.indicator p { 
+  display: inline-block; 
+  width: auto; height: 30px; 
+  padding: 5px; margin-left: 20px;
+  color: #333; box-sizing: border-box;
+  transform: translateY(-80%);
+  background-color: #fff;
+}
+.indicator em { font-weight: 500; }
+.indicator span { font-weight: 700; color: #777; }
+
+
+/* _________________________________________________________________ */
+.slide_con_01 { background-color: #91460977; }
+.slide_con_02 { background-color: #4DB9AA77; }
+.slide_con_03 { background-color: #A1871D77; }
+.slide_con_04 { background-color: #0A059577; }
+.slide_con_05 { background-color: #41FF2A77; }
