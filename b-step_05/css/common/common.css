@@ -13,6 +13,9 @@
   position: absolute; z-index: -1;
   width: 0; height: 0; 
   overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  overflow: hidden;
  }
 
 
@@ -22,20 +25,21 @@
 /* -_____코드 예제 세팅________________________________ */
 
 .code_exam {
-  width: 80%; height: auto; min-height: 1000px;
+  width: 90%; min-width: 600px; height: auto; min-height: 1000px;
   margin: auto; padding: 20px; box-sizing: border-box;
   /* background-color: #eee; */
 }
 
 .code_exam h1 {
   width: 100%; height: auto;
-  padding-bottom: 20px;
+  padding-bottom: 20px; padding-top: 10px;
   font-size: 20px; font-weight: 900;
   text-align: center;
 }
+.code_exam h1 > a { color: #05a;}
 
 .code_exam .part {
-  width: 80%; height: auto;
+  width: 90%; height: auto;
   margin: 20px auto 0; padding: 20px; 
   border: 1px solid #555;
   box-sizing: border-box;
