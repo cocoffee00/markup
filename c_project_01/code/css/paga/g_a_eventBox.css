@@ -62,7 +62,7 @@
   padding: 30px 60px; box-sizing: border-box;
   margin-bottom: 30px;;
   border-radius: 7px;
-  background-image: url("../../img/event_page/Rectangle1.png");
+  background-color: #ddf;
 }
 .event_list button {
   position: relative;
