@@ -53,6 +53,11 @@
   background-color: #ccc;
   border-radius: 2rem;
 }
+.slide_indicator li a:hover {}
+.slide_indicator li a:focus {
+  outline: 2px solid;
+}
+
 .slide_indicator li.action { width: 5rem;}
 .slide_indicator li.action a { 
   background-color: rgba(26, 93, 81, 1);
